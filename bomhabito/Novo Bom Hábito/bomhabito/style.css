@@ -1,0 +1,97 @@
+.top-container{width: 100%; height:450px; position: relative; z-index: 9; top:-452px}
+.bottom-fake-container{width: 100%; height:528px;  background: url("bg-light.png") repeat-x; margin: -452px auto}
+.slide1{background: url("slide1.png") no-repeat center; width: 100%; height: 455px}
+.slide2{background: url("slide2.png") no-repeat  center; width: 100%; height: 455px}
+.slide3{background: url("slide3.png") no-repeat  center; width: 100%; height: 455px}
+.slide4{background: url("slide4.png") no-repeat  center; width: 100%; height: 455px}
+.orange{color:#fb5625}
+.logo{width:200px; height:43px; background:url("logo.png") no-repeat center; cursor:pointer; margin-left: 166px}
+.slogan{width:234px; float:right; padding-right:206px; display: none}
+.center-invisible-square{width: 980px; height: 452px; margin: 0px auto; float: none; border: 1px #6faf81}
+.center-invisible-left-part{width: 638px; height: 100%;}
+.center-invisible-right-part{width: 320px; height:381px; background: #f2f2f2; margin-top: 59px}
+.traparent{opacity:0.9}
+.radius{border-radius:25px;}
+.flag{height:66px;width:60px; margin-right:24px; background:url("flag.png") no-repeat center; margin-top: -6px}
+.right{float:right}
+.start{
+	height:70px; 
+	width:254px; 
+	height: 80px; 
+	font-size:24px; 
+	line-height: 70px; 
+	color:#f2f2f2; 
+	margin-left: 42px; 
+	text-align: center;
+	font-weight: bold; 
+	font-family: Helvetica; 
+}
+.confirm{background: url("confirm.png") no-repeat center;  margin-left:37px;}
+.confirm:hover{background: url("confirm-hover.png") no-repeat center;  margin-left:33px; margin-top:-4px}
+.learn-more{
+	font-size:24px; 
+	line-height: 84px; 
+	color:#fb5625; 
+	margin-left: 42px; 
+	font-weight: bold; 
+	font-family: Helvetica; 
+	text-shadow: 0 2px #FFFFFF
+}
+.long-text{margin-left:40px; line-height:28px; width: 208px; font-size: 14px;  text-shadow: 0 1px #FFFFFF}
+body{background:url("bg-pattern.jpg") }
+.main-text-white{font-size:26px; color:#f2f2f2; font-weight: bold; font-family: Helvetica; line-height: 26px}
+.unselected{
+	height:140px; 
+	width:152px; 
+	margin-left:0px; 
+	background: url("bg-itens.png"); 
+	border-left: 1px #6faf81 solid;  
+	border-right: 1px #6faf81 ;
+	position: relative;
+	opacity:0.33;
+	z-index: 1;
+	cursor:pointer
+}
+.selected{
+	background:#f2f2f2 ;
+	border-radius:15px; 
+	height:160px; 
+	width:152px; 
+	margin-top: -11px; 
+	z-index: 10;
+	opacity:1;
+}
+
+.span2.slide-link.left-item-details.unselected{border-radius:0 0 0 25px}
+.span2.slide-link.right-item-details.unselected {border-radius:0 0 25px 0}
+.span2.slide-link.right-item-details.selected , .span2.slide-link.left-item-details.selected {border-radius:15px}
+
+.unselected .arrow {display: none}
+.selected .arrow{
+	background:url("arrow.png") no-repeat center;
+	width:23px;
+	height:23px;
+	position: relative;
+    left: 65px;
+    display: block;
+    margin-top: -18px
+}
+
+.unselected .money{background: url("money.png") no-repeat center; width: 100%; height:140px}
+.unselected  .clock{background: url("clock.png") no-repeat center; width: 100%; height:140px}
+.unselected  .people{background: url("people.png") no-repeat center; width: 100%; height:140px}
+.unselected  .doc{background: url("doc.png") no-repeat center; width: 100%; height:140px}
+
+.selected .money{background: url("money.png") no-repeat center; width: 100%; height:197px}
+.selected .clock{background: url("clock.png") no-repeat center; width: 100%; height:197px}
+.selected .people{background: url("people.png") no-repeat center; width: 100%; height:198px}
+.selected .doc{background: url("doc-hover.png") no-repeat center; width: 100%; height:198px}
+
+.opinion{ background:url("bg-opinion.png") no-repeat center; width:625px; height: 100%; margin-left: 46px}
+.opinion-title{color:#f2f2f2; margin-left:66px; margin-top:70px; line-height:18px; width: 240px; font-size: 18px;  font-weight: bold}
+.opinion-text{color:#f2f2f2; width:336px; margin-left: 66px; margin-top: 30px; line-height: 22px}
+.occupation{font-style:italic; font-weight:normal; font-size:12px; top:-6px; position:relative}
+.carousel-container{height:455px; width:1280px; overflow:hidden; margin: 0 auto}
+
+.text-footer{font-size: 12px; color:#666; line-height: 66px}
+<!--FONTES  LARANJA #fb5625 BRANCO #f2f2f2 BORDER DO OVER DOS ICONES #6faf81 TEXTO PADRÃO #c8e1d2 TÍTULOS #ffffff -->
