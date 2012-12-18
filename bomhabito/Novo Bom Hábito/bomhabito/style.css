@@ -1,4 +1,8 @@
-.top-container{width: 100%; height:450px; position: relative; z-index: 9; top:-452px}
+.top-container{width: 100%; height:452px; position: relative; z-index: 9; top:-452px }
+.infinity-bg0{background: url("infinity-bg-people.png"); width: 100%; height: 455px}
+.infinity-bg1{background: url("infinity-bg-blue.png"); width: 100%; height: 455px}
+.infinity-bg2{background: url("infinity-bg-black.png"); width: 100%; height: 455px}
+.infinity-bg3{background: url("infinity-bg-black.png"); width: 100%; height: 455px}
 .bottom-fake-container{width: 100%; height:528px;  background: url("bg-light.png") repeat-x; margin: -452px auto}
 .slide1{background: url("slide1.png") no-repeat center; width: 100%; height: 455px}
 .slide2{background: url("slide2.png") no-repeat  center; width: 100%; height: 455px}
@@ -90,8 +94,14 @@ body{background:url("bg-pattern.jpg") }
 .opinion{ background:url("bg-opinion.png") no-repeat center; width:625px; height: 100%; margin-left: 46px}
 .opinion-title{color:#f2f2f2; margin-left:66px; margin-top:70px; line-height:18px; width: 240px; font-size: 18px;  font-weight: bold}
 .opinion-text{color:#f2f2f2; width:336px; margin-left: 66px; margin-top: 30px; line-height: 22px}
-.occupation{font-style:italic; font-weight:normal; font-size:12px; top:-6px; position:relative}
+.occupation{font-style:italic; font-weight:normal; font-size:12px; top:-6px; position:relative; margin-left: 0px}
 .carousel-container{height:455px; width:1280px; overflow:hidden; margin: 0 auto}
 
 .text-footer{font-size: 12px; color:#666; line-height: 66px}
+
+.photo{ height: 140px; margin-left: 50px; margin-top: -15px; width: 140px}
+.otavio{background: url("otavio.jpg") no-repeat center;}
+.twain{background: url("twain.jpg") no-repeat center;}
+.aristoteles{background: url("aristoteles.jpg") no-repeat center;}
+.maxwell{background: url("maxwell.jpg") no-repeat center;}
 <!--FONTES  LARANJA #fb5625 BRANCO #f2f2f2 BORDER DO OVER DOS ICONES #6faf81 TEXTO PADRÃO #c8e1d2 TÍTULOS #ffffff -->
