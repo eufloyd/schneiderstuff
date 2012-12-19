@@ -13,7 +13,11 @@ hibernate {
 environments {
 
     development {
-        dataSource {
+          dataSource {
+            dbCreate = "update"
+            url = "jdbc:hsqldb:mem:testDb"
+        }
+        /*dataSource {
 					driverClassName = "org.postgresql.Driver"
 					dialect = "org.hibernate.dialect.PostgreSQLDialect"
 					dbCreate = "create-drop"
@@ -21,6 +25,7 @@ environments {
 					username = "sigaxur"
 					password = "admin@123"
 				}
+        */
     }
 	
     test {

@@ -15,7 +15,7 @@ class UrlMappings {
 		"/" {
 			controller = "lpage"
 			action = "index"
-			name="bomHabitoA"
+			name="bomHabito"
 		}
 		
 		"500"(view:'/error')

@@ -1,8 +1,9 @@
+//- colocar o novo layout na app
+//- validação de e-mails por javascript
 //- página de agradecimento
-//- inicialmente a lista de ícones está posicionada muito para a direita causando impressão de movimento
-//- feed/delicious
-//- background infinito
 //- econtrar textos de pessoas respeitadas
+//- feed/delicious
+//- inicialmente a lista de ícones está posicionada muito para a direita causando impressão de movimento
 
 function go_to_slide(index){
    $('#carousel').carousel(index);
