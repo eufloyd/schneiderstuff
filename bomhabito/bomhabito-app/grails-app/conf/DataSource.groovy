@@ -34,11 +34,12 @@ environments {
             url = "jdbc:hsqldb:mem:testDb"
         }
     }
+    
     production {
          dataSource {
 					driverClassName = "org.postgresql.Driver"
 					dialect = "org.hibernate.dialect.PostgreSQLDialect"
-					dbCreate = "create"
+					dbCreate = "update"
 					url="jdbc:postgresql://localhost:5432/bomhabito"
 					username = "informant"
 					password = "1nf0rm4nt"

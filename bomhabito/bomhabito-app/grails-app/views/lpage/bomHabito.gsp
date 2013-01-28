@@ -29,7 +29,14 @@
 			<div class="row" >
 				<div class="span5" style="width:100%">
 					<div style="width:1278px; margin:0px auto">
-						<a href="${request.contextPath}"><div class="logo"></div></a>
+						<div class="row">
+							<div class="span1" style="width:1000px">
+								<a href="${request.contextPath}"><div class="logo"></div></a>
+							</div>
+							<div class="span1" style="width:250px">
+								<div style="top:15px" class="fb-like" data-href="http://www.bomhabito.com.br" data-send="false" data-layout="button_count" data-width="45" data-show-faces="false"></div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -75,21 +82,17 @@
 								</div>
 								<div class="row" style="height:133px">
 									<div class="span3" style="width:210px">
-										<div class="long-text">Aumento o lucro da sua empresa com os melhores hábitos da sua equipe.
+										<div class="long-text">Aumente o lucro da sua empresa com os melhores hábitos da sua equipe.
 										</div>
 									</div>
 								</div>
-								<form id="form">
+								<form id="form" onsubmit="return is_email()" >
 									<div class="row" style="height:92px">
 										<div class="span3">
 											<input id="email" name="email" type="text" placeholder="Digite seu e-mail aqui" style="margin-left:40px; height:44px; width:225px; margin-top:24px">
 										</div>
 									</div>
-									<div class="row" style="height:60px">
-										<div class="span3" style="margin-top:7px;">
-											<div class="confirm start">COMECE AGORA</div>
-										</div>
-									</div>
+									<a href="#" class="start">COMECE AGORA</a>
 								</form>
 							</g:if>
 							<g:else>
@@ -207,18 +210,17 @@
 									</div>
 								</div>
 							</div>
-						
 							<div id="feed" class="span2">
-								<div class="row" >
-									<div class="span3 opinion-title" >Nomde do post</div>
-								</div>
-								<div class="row">
-									<div class="span opinion-text" >Um texto bem legal  com diversas linhas
-										que vem da internt
-										e que blah  blah blah blah blah blah blah e que blah  blah blah blah blah blah blah
-										e que blah  blah blah blah blah blah blah e que blah  blah blah 
-									</div>
-								</div>
+								<div class="row" style="height:30px">&nbsp;</div>
+								<g:each in="${posts}">
+									<a href="${it.link}" target="_blank">
+										<div class="row" >
+											<div class="span3 post-title">${it.title}</div>
+											<div class="span3 post-date">${it.date}</div>
+											<div class="span post-text line">${it.text}</div>
+										</div>
+									</a>
+								</g:each>
 							</div>
 						</div>
 					</div>
@@ -242,5 +244,41 @@
 		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 		<script type="text/javascript" src="js/bootstrap-carousel.js"></script>
 		<script type="text/javascript" src="js/scripts.js"></script>
+		<div id="fb-root"></div>
+		<script>
+		  window.fbAsyncInit = function() {
+		    FB.init({
+		      appId      : '401417529943125',
+		      //channelUrl : '//www.bomhabito.com.br/channel.html',
+		      status     : true, 
+		      cookie     : true, 
+		      xfbml      : true  
+		    });
+		  };
+
+		  (function(d, debug){
+		     var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+		     if (d.getElementById(id)) {return;}
+		     js = d.createElement('script'); js.id = id; js.async = true;
+		     js.src = "//connect.facebook.net/en_US/all" + (debug ? "/debug" : "") + ".js";
+		     ref.parentNode.insertBefore(js, ref);
+		   }(document, /*debug*/ false));
+
+	  	/*FB.api('/platform', function(response) {
+		  alert(response.company_overview);
+		});*/
+
+		/*** analytics ***/
+		 var _gaq = _gaq || [];
+		     _gaq.push(['_setAccount', 'UA-37303202-1']);
+		     _gaq.push(['_trackPageview']);
+		   
+		     (function() {
+		       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		     })();
+		     
+		</script>
 	</body>
 </html>

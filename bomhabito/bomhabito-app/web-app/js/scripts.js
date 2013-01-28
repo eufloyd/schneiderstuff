@@ -1,9 +1,3 @@
-//- página de agradecimento
-//- inicialmente a lista de ícones está posicionada muito para a direita causando impressão de movimento
-//- feed/delicious
-//- background infinito
-//- econtrar textos de pessoas respeitadas
-
 function go_to_slide(index){
    $('#carousel').carousel(index)
    return false
@@ -15,7 +9,7 @@ function set_infinity_background(index){
 
 function change_opinion(index){
      var divs = $("#bottom-center-invisible").find(".opinion").removeClass("hide").addClass("hide");
-     var divs = $("#respected-guy-opinion" + index).removeClass("hide");
+     divs = $("#respected-guy-opinion" + index).removeClass("hide");
 }
 
 $(document).ready(function(){
@@ -31,7 +25,7 @@ function is_email(){
 
 function init_carousel(){
   $('#carousel').carousel({
-    interval: 5000
+    interval: 9000
   }).bind('slid', function() {
         var index = $(this).find(".active").attr("id")
         var divs = $("#slide-links")
@@ -68,7 +62,6 @@ function init_form(){
     else
       alert("E-mail inválido! Tente novamente.")
   })
-
   $("#email").focusout(function() {
     if(!is_email())
       $("#email").attr('value', '')
