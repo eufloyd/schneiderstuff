@@ -31,7 +31,7 @@
 					<div style="width:1278px; margin:0px auto">
 						<div class="row">
 							<div class="span1" style="width:1000px">
-								<a href="${request.contextPath}"><div class="logo"></div></a>
+								<a href="${createLink(uri: '/')}"><div class="logo"></div></a>
 							</div>
 							<div class="span1" style="width:250px">
 								<div style="top:15px" class="fb-like" data-href="http://www.bomhabito.com.br" data-send="false" data-layout="button_count" data-width="45" data-show-faces="false"></div>
@@ -87,11 +87,17 @@
 									</div>
 								</div>
 								<form id="form" onsubmit="return is_email()" >
-									<div class="row" style="height:92px">
+									<div class="row" style="height:64px">
 										<div class="span3">
-											<input id="email" name="email" type="text" placeholder="Digite seu e-mail aqui" style="margin-left:40px; height:44px; width:225px; margin-top:24px">
+											<input id="email" name="email" type="text" placeholder="Digite seu e-mail aqui" style="margin-left:40px; height:44px; width:225px">
 										</div>
 									</div>
+									<span class="long-text" style="line-height:14px;margin-left:40px">
+										<g:checkBox name="isBusiness"/> 
+										<span style="top:3px; position:relative">Você tem interesse em mudar o <br/></span>
+										<span style="top:3px; position:relative; margin-left:57px">hábito de outras pessoas?</span>
+
+									</span>
 									<a href="#" class="start">COMECE AGORA</a>
 								</form>
 							</g:if>

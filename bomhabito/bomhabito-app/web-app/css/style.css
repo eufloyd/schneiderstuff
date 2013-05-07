@@ -50,7 +50,7 @@ a.start:hover{
 	font-family: Helvetica; 
 	text-shadow: 0 2px #FFFFFF
 }
-.long-text{margin-left:40px; line-height:28px; width: 208px; font-size: 14px;  text-shadow: 0 1px #FFFFFF}
+.long-text{margin-left:40px; line-height:28px; width: 216px; font-size: 14px;  text-shadow: 0 1px #FFFFFF}
 body{background:url("../img/bg-pattern.jpg") }
 .main-text-white{font-size:26px; color:#f2f2f2; font-weight: bold; font-family: Helvetica; line-height: 26px}
 .unselected{

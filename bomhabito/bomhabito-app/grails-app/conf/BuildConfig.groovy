@@ -25,7 +25,7 @@ grails.project.dependency.resolution = {
     }
     dependencies {
         // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes eg.
-		compile ('postgresql:postgresql:8.2-507.jdbc3')
+		compile ('postgresql:postgresql:9.1-901.jdbc4')
         // runtime 'mysql:mysql-connector-java:5.1.13'
     }
 	

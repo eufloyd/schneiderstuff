@@ -1,4 +1,4 @@
-dataSource {
+xdataSource {
     pooled = true
     driverClassName = "org.hsqldb.jdbcDriver"
     username = "sa"
@@ -13,19 +13,19 @@ hibernate {
 environments {
 
     development {
-          dataSource {
+        /*  dataSource {
             dbCreate = "update"
             url = "jdbc:hsqldb:mem:testDb"
-        }
-        /*dataSource {
+        }*/
+        dataSource {
 					driverClassName = "org.postgresql.Driver"
 					dialect = "org.hibernate.dialect.PostgreSQLDialect"
 					dbCreate = "create-drop"
 					url="jdbc:postgresql://localhost:5432/bomhabito"
-					username = "sigaxur"
-					password = "admin@123"
-				}
-        */
+					username = "informant"
+                    password = "1nf0rm4nt"
+		}
+        
     }
 	
     test {
