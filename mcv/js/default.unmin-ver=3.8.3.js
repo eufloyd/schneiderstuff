@@ -51,8 +51,8 @@ $j(document).ready(function () {
     prettyPhoto();
     initMobileMenu();
     initFlexSlider();
-    fitVideo();
-    fitAudio();
+    //fitVideo();
+    //fitAudio();
     initAccordion();
     initAccordionContentLink();
     initMessages();
@@ -64,7 +64,7 @@ $j(document).ready(function () {
     initSteps();
     initProgressBarsVertical();
     initElementsAnimation();
-    updateShoppingCart();
+    //updateShoppingCart();
     initHashClick();
     checkAnchorOnScroll();
     initImageHover();
@@ -1385,7 +1385,8 @@ function initFlexSlider() {
             slideshowSpeed: interval,
             start: function (slider) {
                 setTimeout(function () {
-                    $j(".flexslider").fitVids()
+                  alert("!!! HERO")
+                  //  $j(".flexslider").fitVids()
                 }, 200);
                 if (slider.hasClass('wpb_gallery_slides')) {
                     $image_title = slider.slides.eq(slider.currentSlide).find('.q_gallery_slider').data('image_title');
