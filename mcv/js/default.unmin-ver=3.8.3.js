@@ -33,10 +33,9 @@ $j(document).ready(function () {
     if (!isEmbed) {
         $j('.content').css('min-height', $j(window).height() - $j('footer').height())
     }
-    setDropDownMenuPosition();
-    initDropDownMenu();
+    
     initQodeSlider();
-    initSideMenu();
+   // initSideMenu();
     initMessageHeight();
     initToCounter();
     initCounter();
@@ -51,8 +50,8 @@ $j(document).ready(function () {
     prettyPhoto();
     initMobileMenu();
     initFlexSlider();
-    //fitVideo();
-    //fitAudio();
+    fitVideo();
+    fitAudio();
     initAccordion();
     initAccordionContentLink();
     initMessages();
@@ -65,6 +64,7 @@ $j(document).ready(function () {
     initProgressBarsVertical();
     initElementsAnimation();
     //updateShoppingCart();
+
     initHashClick();
     checkAnchorOnScroll();
     initImageHover();
@@ -98,8 +98,7 @@ $j(document).ready(function () {
 $j(window).load(function () {
     "use strict";
     $j('.touch .main_menu li:has(div.second)').doubleTapToGo();
-    setDropDownMenuPosition();
-    initDropDownMenu();
+
     initPortfolio();
     initPortfolioSingleInfo();
     initTestimonials();
@@ -243,7 +242,7 @@ function headerSize($scroll) {
                 } else {
                     $j('.q_logo a').height(min_header_height_sticky - 10)
                 } if ($j('header.page_header').hasClass('menu_bottom')) {
-                    initDropDownMenu()
+                    
                 }
             }
         } else {
@@ -256,7 +255,6 @@ function headerSize($scroll) {
                 } else {
                     $j('.q_logo a').height(header_height - 10)
                 } if ($j('header.page_header').hasClass('menu_bottom')) {
-                    initDropDownMenu()
                 }
             }
         }
@@ -705,24 +703,6 @@ function initSideMenu() {
     })
 }
 
-function setDropDownMenuPosition() {
-    "use strict";
-    var menu_items = $j(".drop_down > ul > li.narrow");
-    menu_items.each(function (i) {
-        var browser_width = $j(window).width() - 16;
-        var menu_item_position = $j(menu_items[i]).offset().left;
-        var sub_menu_width = $j(menu_items[i]).find('.second .inner ul').width();
-        var menu_item_from_left = browser_width - menu_item_position + 25;
-        var sub_menu_from_left;
-        if ($j(menu_items[i]).find('li.sub').length > 0) {
-            sub_menu_from_left = browser_width - menu_item_position - sub_menu_width + 25
-        }
-        if (menu_item_from_left < sub_menu_width || sub_menu_from_left < sub_menu_width) {
-            $j(menu_items[i]).find('.second').addClass('right');
-            $j(menu_items[i]).find('.second .inner ul').addClass('right')
-        }
-    })
-}
 
 function initDropDownMenu() {
     "use strict";

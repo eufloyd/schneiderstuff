@@ -50,19 +50,42 @@
 		<script type='text/javascript' src='wp-content/plugins/LayerSlider/static/js/greensock-ver=1.11.2.js'></script>
 		<script type='text/javascript' src='wp-content/plugins/LayerSlider/static/js/layerslider.transitions-ver=5.0.2.js'></script>
 
+		<script type="text/javascript">var lsjQuery = jQuery;</script>
+		<script type="text/javascript"> 
+			lsjQuery(document).ready(function() { 
+				if(typeof lsjQuery.fn.layerSlider == "undefined") { 
+					lsShowNotice('layerslider_13','jquery'); 
+				} else { lsjQuery("#layerslider_13").layerSlider({responsiveUnder: 1100, layersContainer: 1100, pauseOnHover: false, skin: 'noskin', globalBGColor: 'fbfbfb', showCircleTimer: false, skinsPath: 'wp-content/plugins/LayerSlider/static/skins/'}) 
+				} 
+			});
+		</script>
+			
+		<style type="text/css">
+			
+			a.from-tnh{
+				font-size: 12px;
+			}
+
+			a.from-tnh span{
+				font-size: 12px;
+				color:red;
+			}
+
+			a:hover.from-tnh span{
+				font-size: 12px;
+				color:#00c6ff;
+			}
+		</style>
 
 
 	</head>
 
-	<body class="page page-id-13238 page-template page-template-full_width-php ajax_fade page_not_loaded  show_loading_animation  wpb-js-composer js-comp-ver-3.7.3 vc_responsive">
+	<body>
 
-		<!--INSERIR AQUI side_menu right caso queira o menu lateral-->
 
 
 		<div class="wrapper">
 			<div class="wrapper_inner">
-
-
 
 				<header class="page_header   fixed   ">
 					<div class="header_inner clearfix">
@@ -73,7 +96,8 @@
 									<div class="mobile_menu_button"><span><i class="fa fa-bars"></i></span></div>
 									<!--Ĺogo-->
 									<div class="logo_wrapper">
-										<div class="q_logo"><a href="../index.html"><img class="normal" src="wp-content/uploads/2014/02/eden-logo-retina1.png" alt="Logo"/><img class="light" src="wp-content/themes/eden/img/logo.png" alt="Logo"/><img class="dark" src="wp-content/themes/eden/img/logo_black.png" alt="Logo"/><img class="sticky" src="wp-content/themes/eden/img/logo_black.png" alt="Logo"/></a>
+										<div class="q_logo">
+											<a style="eight: 75px; visibility: visible; font-size: 22px; margin-top: -10px;font-family:'museo300','Open Sans'; color:#00c6ff" href="../index.html">Logo<span style="color:black"> Médico</span></a><!--<img class="normal" src="wp-content/uploads/2014/02/eden-logo-retina1.png" alt="Logo"/><img class="light" src="wp-content/themes/eden/img/logo.png" alt="Logo"/><img class="dark" src="wp-content/themes/eden/img/logo_black.png" alt="Logo"/><img class="sticky" src="wp-content/themes/eden/img/logo_black.png" alt="Logo"/>-->
 										</div>		
 									</div>
 								</div>
@@ -81,276 +105,144 @@
 								<div class="header_inner_right">
 									<div class="side_menu_button_wrapper right">
 										<div class="side_menu_button">
-
-											<div class="header-widget widget_text header-bottom-right-widget">
-												<div class="textwidget"><span class='q_social_icon_holder'><a href='http://www.google.com' target='_self'><i class='fa fa-twitter fa-2x simple_social' style=''></i><i class='fa fa-twitter fa-2x simple_social social_share_hover twitter' style=''></i></a></span>
-													<span class='q_social_icon_holder'><a href='http://www.google.com' target='_self'><i class='fa fa-facebook fa-2x simple_social' style=''></i><i class='fa fa-facebook fa-2x simple_social social_share_hover facebook' style=''></i></a></span>
-													<span class='q_social_icon_holder'><a href='http://www.google.com' target='_self'><i class='fa fa-pinterest fa-2x simple_social' style=''></i><i class='fa fa-pinterest fa-2x simple_social social_share_hover pinterest' style=''></i></a></span></div>
-												</div>                                                                                    <a class="search_button" href="javascript:void(0)">
-												<i class="fa fa-search"></i>
-											</a>
-											<a class="side_menu_button_link" href="javascript:void(0)">
-												<i class="fa fa-bars"></i>
-											</a>
+											<a class="from-tnh">somos <span>TNH</span></a>
 										</div>
 									</div>
 								</div>
+								<!--start menu-->
 								<nav class="main_menu drop_down ">
 									<ul id="menu-top_menu" class="">
-										<li id="nav-menu-item-14139" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children  has_sub narrow">
-											<a href="../index.html" class="">
+										<li id="nav-menu-item-14139" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children  active narrow">
+											<a href="../index.html" class="current">
 												<i class="menu_icon fa blank"></i>
-												<span>Home</span><span class="line">
-											</span>
-										</a>
-										<div class="second bellow_header">
-											<div class="inner">
-												<ul>
-													<li id="nav-menu-item-13897" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="../index.html" class=""><i class="menu_icon fa blank"></i><span>Home Default</span><span class="line"></span></a></li>
-													<li id="nav-menu-item-13898" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="../home-layer-slider-long/index.html" class=""><i class="menu_icon fa blank"></i><span>Home Layer Slider / Long</span><span class="line"></span></a></li>
-													<li id="nav-menu-item-14035" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="../portfolio/with-text/home-portfolio-simple/index.html" class=""><i class="menu_icon fa blank"></i><span>Home Portfolio / Simple</span><span class="line"></span></a></li>
-													<li id="nav-menu-item-14229" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="../home-full-slider/index.html" class=""><i class="menu_icon fa blank"></i><span>Home Full Screen Slider</span><span class="line"></span></a></li>
-													<li id="nav-menu-item-14231" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="../home-example-5/index.html" class=""><i class="menu_icon fa blank"></i><span>Home Example 5</span><span class="line"></span></a></li>
-													<li id="nav-menu-item-14230" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="../home-example-6/index.html" class=""><i class="menu_icon fa blank"></i><span>Home Example 6</span><span class="line"></span></a></li>
-													<li id="nav-menu-item-14228" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="../home-zoom-out/index.html" class=""><i class="menu_icon fa blank"></i><span>Home Zoom Out Image</span><span class="line"></span></a></li>
-												</ul>
-											</div>
-										</div>
-									</li>
-									<li id="nav-menu-item-9729" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub narrow"><a href="index.html#" class=""><i class="menu_icon fa blank"></i><span>About</span><span class="line"></span></a>
-										<div class="second bellow_header"><div class="inner"><ul>
-											<li id="nav-menu-item-13894" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="../about-us-extended/index.html" class=""><i class="menu_icon fa blank"></i><span>About Us Extended</span><span class="line"></span></a></li>
-											<li id="nav-menu-item-13893" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="../about-us-simple/index.html" class=""><i class="menu_icon fa blank"></i><span>About Us Simple</span><span class="line"></span></a></li>
-											<li id="nav-menu-item-13895" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="../about-our-process/index.html" class=""><i class="menu_icon fa blank"></i><span>About Us Process</span><span class="line"></span></a></li>
-										</ul></div></div>
-									</li>
-									<li id="nav-menu-item-10774" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub narrow"><a href="index.html#" class=""><i class="menu_icon fa blank"></i><span>Portfolio</span><span class="line"></span></a>
-										<div class="second bellow_header"><div class="inner"><ul>
-											<li id="nav-menu-item-10902" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="../portfolio/with-text/three-columns-grid/index.html" class=""><i class="menu_icon fa blank"></i><span>3 Columns / White</span><span class="line"></span></a></li>
-											<li id="nav-menu-item-10893" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="../portfolio/with-text/four-columns-grid/index.html" class=""><i class="menu_icon fa blank"></i><span>4 Columns / Slider / Dark</span><span class="line"></span></a></li>
-											<li id="nav-menu-item-10894" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="../portfolio/with-text/four-columns-wide/index.html" class=""><i class="menu_icon fa blank"></i><span>Wide With Text</span><span class="line"></span></a></li>
-											<li id="nav-menu-item-10892" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="../portfolio/gallery-style-condensed/four-columns-wide/index.html" class=""><i class="menu_icon fa blank"></i><span>Wide Without Space</span><span class="line"></span></a></li>
-											<li id="nav-menu-item-11034" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children sub"><a href="index.html#" class="" style="cursor: default;" onclick="JavaScript: return false;"><i class="menu_icon fa blank"></i><span>Single Project</span><span class="line"></span><i class="q_menu_arrow fa fa-angle-right"></i></a>
-												<ul>
-													<li id="nav-menu-item-11035" class="menu-item menu-item-type-post_type menu-item-object-portfolio_page "><a href="../portfolio_page/art-design-blvd/index.html" class=""><i class="menu_icon fa blank"></i><span>Vertical Floating Sidebar</span><span class="line"></span></a></li>
-													<li id="nav-menu-item-11037" class="menu-item menu-item-type-post_type menu-item-object-portfolio_page "><a href="../portfolio_page/stockholm-fashion-destination/index.html" class=""><i class="menu_icon fa blank"></i><span>Vertical Wide Project</span><span class="line"></span></a></li>
-													<li id="nav-menu-item-11038" class="menu-item menu-item-type-post_type menu-item-object-portfolio_page "><a href="../portfolio_page/smash-pop-art-storm/index.html" class=""><i class="menu_icon fa blank"></i><span>Small Slider Project</span><span class="line"></span></a></li>
-													<li id="nav-menu-item-11039" class="menu-item menu-item-type-post_type menu-item-object-portfolio_page "><a href="../portfolio_page/der-spiegel-cover-art/index.html" class=""><i class="menu_icon fa blank"></i><span>Big Slider Project</span><span class="line"></span></a></li>
-													<li id="nav-menu-item-11040" class="menu-item menu-item-type-post_type menu-item-object-portfolio_page "><a href="../portfolio_page/berlin-design-week-poster/index.html" class=""><i class="menu_icon fa blank"></i><span>Gallery</span><span class="line"></span></a></li>
-													<li id="nav-menu-item-11041" class="menu-item menu-item-type-post_type menu-item-object-portfolio_page "><a href="../portfolio_page/video-performance-festival-2014/index.html" class=""><i class="menu_icon fa blank"></i><span>Video (In Any Template)</span><span class="line"></span></a></li>
-												</ul>
-											</li>
-										</ul></div></div>
-									</li>
-									<li id="nav-menu-item-9733" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub narrow"><a href="index.html#" class=""><i class="menu_icon fa blank"></i><span>Elements</span><span class="line"></span></a>
-										<div class="second bellow_header"><div class="inner"><ul>
-											<li id="nav-menu-item-13971" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="../infographics/index.html" class=""><i class="menu_icon fa blank"></i><span>Infographics</span><span class="line"></span></a></li>
-											<li id="nav-menu-item-13970" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="../elements-3/index.html" class=""><i class="menu_icon fa blank"></i><span>Elements I</span><span class="line"></span></a></li>
-											<li id="nav-menu-item-13972" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children sub"><a href="../common-elements/index.html" class=""><i class="menu_icon fa blank"></i><span>Elements II / Anchor e.g.</span><span class="line"></span><i class="q_menu_arrow fa fa-angle-right"></i></a>
-												<ul>
-													<li id="nav-menu-item-14197" class="menu-item menu-item-type-post_type menu-item-object-page anchor-item "><a href="../common-elements/index.html#accordions_tabs" class=""><i class="menu_icon fa fa-rocket"></i><span>Accordions And Tabs</span><span class="line"></span></a></li>
-													<li id="nav-menu-item-14198" class="menu-item menu-item-type-post_type menu-item-object-page anchor-item "><a href="../common-elements/index.html#pricing_tables" class=""><i class="menu_icon fa fa-table"></i><span>Pricing Tables</span><span class="line"></span></a></li>
-													<li id="nav-menu-item-14199" class="menu-item menu-item-type-post_type menu-item-object-page anchor-item "><a href="../common-elements/index.html#testimonials" class=""><i class="menu_icon fa fa-comment"></i><span>Testimonials</span><span class="line"></span></a></li>
-													<li id="nav-menu-item-14200" class="menu-item menu-item-type-post_type menu-item-object-page anchor-item "><a href="../common-elements/index.html#lists" class=""><i class="menu_icon fa fa-list"></i><span>List Combinations</span><span class="line"></span></a></li>
-													<li id="nav-menu-item-14201" class="menu-item menu-item-type-post_type menu-item-object-page anchor-item "><a href="../common-elements/index.html#carousel" class=""><i class="menu_icon fa fa-picture-o"></i><span>Qode Carousel</span><span class="line"></span></a></li>
-													<li id="nav-menu-item-14202" class="menu-item menu-item-type-post_type menu-item-object-page anchor-item "><a href="../common-elements/index.html#buttons" class=""><i class="menu_icon fa fa-anchor"></i><span>Buttons</span><span class="line"></span></a></li>
-													<li id="nav-menu-item-14203" class="menu-item menu-item-type-post_type menu-item-object-page anchor-item "><a href="../common-elements/index.html#process" class=""><i class="menu_icon fa fa-plane"></i><span>Qode Process</span><span class="line"></span></a></li>
-													<li id="nav-menu-item-14204" class="menu-item menu-item-type-post_type menu-item-object-page anchor-item "><a href="../common-elements/index.html#cover_box" class=""><i class="menu_icon fa fa-square"></i><span>Cover Boxes</span><span class="line"></span></a></li>
-												</ul>
-											</li>
-										</ul></div></div>
-									</li>
-									<li id="nav-menu-item-9779" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub narrow"><a href="index.html#" class=""><i class="menu_icon fa blank"></i><span>Blog</span><span class="line"></span></a>
-										<div class="second bellow_header"><div class="inner"><ul>
-											<li id="nav-menu-item-9888" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="../blog/masonry/index.html" class=""><i class="menu_icon fa blank"></i><span>Masonry</span><span class="line"></span></a></li>
-											<li id="nav-menu-item-14137" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="../masonry-fullwidth/index.html" class=""><i class="menu_icon fa blank"></i><span>Masonry Fullwidth</span><span class="line"></span></a></li>
-											<li id="nav-menu-item-9890" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="../blog/large-image/index.html" class=""><i class="menu_icon fa blank"></i><span>Large Image With Sidebar</span><span class="line"></span></a></li>
-											<li id="nav-menu-item-9891" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="../blog/large-image-2/index.html" class=""><i class="menu_icon fa blank"></i><span>Large Image</span><span class="line"></span></a></li>
-											<li id="nav-menu-item-10741" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children sub"><a href="index.html#" class=""><i class="menu_icon fa blank"></i><span>Single Post</span><span class="line"></span><i class="q_menu_arrow fa fa-angle-right"></i></a>
-												<ul>
-													<li id="nav-menu-item-14001" class="menu-item menu-item-type-post_type menu-item-object-post "><a href="../madrids-photographer-marathon/index.html" class=""><i class="menu_icon fa blank"></i><span>Post Without Title</span><span class="line"></span></a></li>
-													<li id="nav-menu-item-10743" class="menu-item menu-item-type-post_type menu-item-object-post "><a href="../josh-woodward-already-there/index.html" class=""><i class="menu_icon fa blank"></i><span>Audio Post</span><span class="line"></span></a></li>
-													<li id="nav-menu-item-10744" class="menu-item menu-item-type-post_type menu-item-object-post "><a href="../icelands-biggest-volcano-timelapse/index.html" class=""><i class="menu_icon fa blank"></i><span>Video Post</span><span class="line"></span></a></li>
-													<li id="nav-menu-item-10747" class="menu-item menu-item-type-post_type menu-item-object-post "><a href="../jeffrey-veen-quote/index.html" class=""><i class="menu_icon fa blank"></i><span>Blockquote post</span><span class="line"></span></a></li>
-													<li id="nav-menu-item-10748" class="menu-item menu-item-type-post_type menu-item-object-post "><a href="../unlocking-brain-secrets/index.html" class=""><i class="menu_icon fa blank"></i><span>Link Post</span><span class="line"></span></a></li>
-													<li id="nav-menu-item-10750" class="menu-item menu-item-type-post_type menu-item-object-post "><a href="../portugal-2013-road-trip-gallery/index.html" class=""><i class="menu_icon fa blank"></i><span>Gallery Post</span><span class="line"></span></a></li>
-													<li id="nav-menu-item-10751" class="menu-item menu-item-type-post_type menu-item-object-post "><a href="../recent-trends-in-storytelling/index.html" class=""><i class="menu_icon fa blank"></i><span>Post Without Sidebar</span><span class="line"></span></a></li>
-													<li id="nav-menu-item-10769" class="menu-item menu-item-type-post_type menu-item-object-post "><a href="../inteligent-transitions-in-ux-design/index.html" class=""><i class="menu_icon fa blank"></i><span>Standard Post</span><span class="line"></span></a></li>
-												</ul>
-											</li>
-										</ul></div></div>
-									</li>
-									<li id="nav-menu-item-13533" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children  has_sub narrow"><a href="../shop/index.html" class=""><i class="menu_icon fa blank"></i><span>Shop</span><span class="line"></span></a>
-										<div class="second bellow_header"><div class="inner"><ul>
-											<li id="nav-menu-item-14003" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="../shop/index.html" class=""><i class="menu_icon fa blank"></i><span>Shop With Sidebar</span><span class="line"></span></a></li>
-											<li id="nav-menu-item-14002" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="../shop-product-list/index.html" class=""><i class="menu_icon fa blank"></i><span>Shop Full Width</span><span class="line"></span></a></li>
-										</ul></div></div>
-									</li>
-									<li id="nav-menu-item-13896" class="menu-item menu-item-type-post_type menu-item-object-page  narrow"><a href="../contact/index.html" class=""><i class="menu_icon fa blank"></i><span>Contact</span><span class="line"></span></a></li>
-									<li id="nav-menu-item-14039" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub wide icons"><a href="index.html#" class=""><i class="menu_icon fa blank"></i><span>Wide Menu</span><span class="line"></span></a>
-										<div class="second bellow_header"><div class="inner"><ul>
-											<li id="nav-menu-item-14040" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children sub"><a href="index.html#" class=""><i class="menu_icon fa blank"></i><span>Column Example I</span><span class="line"></span><i class="q_menu_arrow fa fa-angle-right"></i></a>
-												<ul>
-													<li id="nav-menu-item-14044" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="index.html#" class=""><i class="menu_icon fa fa-eye"></i><span>Menu Option One</span><span class="line"></span></a></li>
-													<li id="nav-menu-item-14045" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="index.html#" class=""><i class="menu_icon fa fa-globe"></i><span>Custom Menu Option Two</span><span class="line"></span></a></li>
-													<li id="nav-menu-item-14046" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="index.html#" class=""><i class="menu_icon fa fa-trophy"></i><span>Menu Option Three</span><span class="line"></span></a></li>
-													<li id="nav-menu-item-14047" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="index.html#" class=""><i class="menu_icon fa fa-star"></i><span>Menu Option Four</span><span class="line"></span></a></li>
-													<li id="nav-menu-item-14048" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="index.html#" class=""><i class="menu_icon fa fa-check"></i><span>Menu Option Five</span><span class="line"></span></a></li>
-												</ul>
-											</li>
-											<li id="nav-menu-item-14041" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children sub"><a href="index.html#" class=""><i class="menu_icon fa blank"></i><span>Column Example II</span><span class="line"></span><i class="q_menu_arrow fa fa-angle-right"></i></a>
-												<ul>
-													<li id="nav-menu-item-14050" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="index.html#" class=""><i class="menu_icon fa fa-film"></i><span>Menu Option One</span><span class="line"></span></a></li>
-													<li id="nav-menu-item-14051" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="index.html#" class=""><i class="menu_icon fa fa-cog"></i><span>Menu Option Two</span><span class="line"></span></a></li>
-													<li id="nav-menu-item-14052" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="index.html#" class=""><i class="menu_icon fa fa-rocket"></i><span>Custom Menu Option Three</span><span class="line"></span></a></li>
-													<li id="nav-menu-item-14053" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="index.html#" class=""><i class="menu_icon fa fa-skype"></i><span>Menu Option Four</span><span class="line"></span></a></li>
-													<li id="nav-menu-item-14054" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="index.html#" class=""><i class="menu_icon fa fa-download"></i><span>Menu Option Five</span><span class="line"></span></a></li>
-												</ul>
-											</li>
-											<li id="nav-menu-item-14042" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children sub"><a href="index.html#" class=""><i class="menu_icon fa blank"></i><span>Column Example III</span><span class="line"></span><i class="q_menu_arrow fa fa-angle-right"></i></a>
-												<ul>
-													<li id="nav-menu-item-14055" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="index.html#" class=""><i class="menu_icon fa fa-hand-o-left"></i><span>Menu Option One</span><span class="line"></span></a></li>
-													<li id="nav-menu-item-14056" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="index.html#" class=""><i class="menu_icon fa fa-ticket"></i><span>Custom Menu Option Two</span><span class="line"></span></a></li>
-													<li id="nav-menu-item-14057" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="index.html#" class=""><i class="menu_icon fa fa-reply"></i><span>Menu Option Three</span><span class="line"></span></a></li>
-													<li id="nav-menu-item-14058" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="index.html#" class=""><i class="menu_icon fa fa-medkit"></i><span>Menu Option Four</span><span class="line"></span></a></li>
-													<li id="nav-menu-item-14059" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="index.html#" class=""><i class="menu_icon fa fa-bell-o"></i><span>Menu Option Five</span><span class="line"></span></a></li>
-												</ul>
-											</li>
-											<li id="nav-menu-item-14043" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children sub"><a href="index.html#" class=""><i class="menu_icon fa blank"></i><span>Column Example IV</span><span class="line"></span><i class="q_menu_arrow fa fa-angle-right"></i></a>
-												<ul>
-													<li id="nav-menu-item-14060" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="index.html#" class=""><i class="menu_icon fa fa-gittip"></i><span>Menu Option One</span><span class="line"></span></a></li>
-													<li id="nav-menu-item-14061" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="index.html#" class=""><i class="menu_icon fa fa-list"></i><span>Menu Option Two</span><span class="line"></span></a></li>
-													<li id="nav-menu-item-14062" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="index.html#" class=""><i class="menu_icon fa fa-plane"></i><span>Custom Menu Option Three</span><span class="line"></span></a></li>
-													<li id="nav-menu-item-14063" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="index.html#" class=""><i class="menu_icon fa fa-magic"></i><span>Menu Option Four</span><span class="line"></span></a></li>
-													<li id="nav-menu-item-14064" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="index.html#" class=""><i class="menu_icon fa fa-facebook"></i><span>Menu Option Five</span><span class="line"></span></a></li>
-												</ul>
-											</li>
-										</ul></div></div>
-									</li>
-								</ul>						</nav>
+												<span>Home</span>
+												<span class="line"></span>
+											</a>
+										</li>
+										<li id="nav-menu-item-9729" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub narrow">
+											<a href="index.html#" class="">
+												<i class="menu_icon fa blank"></i>
+												<span>Como funciona?</span>
+												<span class="line"></span>
+											</a>
+										</li>
+										<li id="nav-menu-item-10774" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub narrow">
+											<a href="index.html#" class="">
+												<i class="menu_icon fa blank"></i>
+												<span>Veja em ação</span>
+												<span class="line"></span>
+											</a>
+										</li>
+										<li id="nav-menu-item-9733" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub narrow">
+											<a href="index.html#" class="">
+												<i class="menu_icon fa blank"></i>
+												<span>Benefícios</span>
+												<span class="line"></span>
+											</a>
+										</li>
+										<li id="nav-menu-item-9779" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub narrow">
+											<a href="index.html#" class=""><i class="menu_icon fa blank"></i>
+												<span>Começar</span>
+												<span class="line"></span>
+											</a>
+										</li>
+										<li id="nav-menu-item-13533" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children  has_sub narrow">
+											<a href="../shop/index.html" class="">
+												<i class="menu_icon fa blank"></i>
+												<span>Contato</span>
+												<span class="line"></span>
+											</a>
+										</li>
+										<!--<li id="nav-menu-item-13896" class="menu-item menu-item-type-post_type menu-item-object-page  narrow">
+											<a href="../contact/index.html" class="">
+												<i class="menu_icon fa blank"></i>
+												<span>Contact</span>
+												<span class="line"></span>
+											</a>
+										</li>
+										<li id="nav-menu-item-14039" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub wide icons">
+											<a href="index.html#" class="">
+												<i class="menu_icon fa blank"></i>
+												<span>Wide Menu</span>
+												<span class="line"></span>
+											</a>
+										</li>-->
+									</ul>
+								</nav>
+								<!--end menu-->
+								<!--start mobile menu-->
 								<nav class="mobile_menu">
-									<ul id="menu-top_menu-1" class=""><li id="mobile-menu-item-14139" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children  has_sub"><a href="../index.html" class=""><span>Home</span><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></a>
-										<ul class="sub_menu">
-											<li id="mobile-menu-item-13897" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="../index.html" class=""><span>Home Default</span><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></a></li>
-											<li id="mobile-menu-item-13898" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="../home-layer-slider-long/index.html" class=""><span>Home Layer Slider / Long</span><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></a></li>
-											<li id="mobile-menu-item-14035" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="../portfolio/with-text/home-portfolio-simple/index.html" class=""><span>Home Portfolio / Simple</span><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></a></li>
-											<li id="mobile-menu-item-14229" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="../home-full-slider/index.html" class=""><span>Home Full Screen Slider</span><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></a></li>
-											<li id="mobile-menu-item-14231" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="../home-example-5/index.html" class=""><span>Home Example 5</span><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></a></li>
-											<li id="mobile-menu-item-14230" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="../home-example-6/index.html" class=""><span>Home Example 6</span><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></a></li>
-											<li id="mobile-menu-item-14228" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="../home-zoom-out/index.html" class=""><span>Home Zoom Out Image</span><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></a></li>
-										</ul>
-									</li>
-									<li id="mobile-menu-item-9729" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub"><a href="index.html#" class=""><span>About</span><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></a>
-										<ul class="sub_menu">
-											<li id="mobile-menu-item-13894" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="../about-us-extended/index.html" class=""><span>About Us Extended</span><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></a></li>
-											<li id="mobile-menu-item-13893" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="../about-us-simple/index.html" class=""><span>About Us Simple</span><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></a></li>
-											<li id="mobile-menu-item-13895" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="../about-our-process/index.html" class=""><span>About Us Process</span><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></a></li>
-										</ul>
-									</li>
-									<li id="mobile-menu-item-10774" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub"><a href="index.html#" class=""><span>Portfolio</span><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></a>
-										<ul class="sub_menu">
-											<li id="mobile-menu-item-10902" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="../portfolio/with-text/three-columns-grid/index.html" class=""><span>3 Columns / White</span><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></a></li>
-											<li id="mobile-menu-item-10893" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="../portfolio/with-text/four-columns-grid/index.html" class=""><span>4 Columns / Slider / Dark</span><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></a></li>
-											<li id="mobile-menu-item-10894" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="../portfolio/with-text/four-columns-wide/index.html" class=""><span>Wide With Text</span><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></a></li>
-											<li id="mobile-menu-item-10892" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="../portfolio/gallery-style-condensed/four-columns-wide/index.html" class=""><span>Wide Without Space</span><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></a></li>
-											<li id="mobile-menu-item-11034" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub"><h3><span>Single Project</span><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></h3>
-												<ul class="sub_menu">
-													<li id="mobile-menu-item-11035" class="menu-item menu-item-type-post_type menu-item-object-portfolio_page "><a href="../portfolio_page/art-design-blvd/index.html" class=""><span>Vertical Floating Sidebar</span><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></a></li>
-													<li id="mobile-menu-item-11037" class="menu-item menu-item-type-post_type menu-item-object-portfolio_page "><a href="../portfolio_page/stockholm-fashion-destination/index.html" class=""><span>Vertical Wide Project</span><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></a></li>
-													<li id="mobile-menu-item-11038" class="menu-item menu-item-type-post_type menu-item-object-portfolio_page "><a href="../portfolio_page/smash-pop-art-storm/index.html" class=""><span>Small Slider Project</span><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></a></li>
-													<li id="mobile-menu-item-11039" class="menu-item menu-item-type-post_type menu-item-object-portfolio_page "><a href="../portfolio_page/der-spiegel-cover-art/index.html" class=""><span>Big Slider Project</span><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></a></li>
-													<li id="mobile-menu-item-11040" class="menu-item menu-item-type-post_type menu-item-object-portfolio_page "><a href="../portfolio_page/berlin-design-week-poster/index.html" class=""><span>Gallery</span><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></a></li>
-													<li id="mobile-menu-item-11041" class="menu-item menu-item-type-post_type menu-item-object-portfolio_page "><a href="../portfolio_page/video-performance-festival-2014/index.html" class=""><span>Video (In Any Template)</span><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></a></li>
-												</ul>
-											</li>
-										</ul>
-									</li>
-									<li id="mobile-menu-item-9733" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub"><a href="index.html#" class=""><span>Elements</span><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></a>
-										<ul class="sub_menu">
-											<li id="mobile-menu-item-13971" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="../infographics/index.html" class=""><span>Infographics</span><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></a></li>
-											<li id="mobile-menu-item-13970" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="../elements-3/index.html" class=""><span>Elements I</span><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></a></li>
-											<li id="mobile-menu-item-13972" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children  has_sub"><a href="../common-elements/index.html" class=""><span>Elements II / Anchor e.g.</span><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></a>
-												<ul class="sub_menu">
-													<li id="mobile-menu-item-14197" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="../common-elements/index.html#accordions_tabs" class=""><span>Accordions And Tabs</span><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></a></li>
-													<li id="mobile-menu-item-14198" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="../common-elements/index.html#pricing_tables" class=""><span>Pricing Tables</span><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></a></li>
-													<li id="mobile-menu-item-14199" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="../common-elements/index.html#testimonials" class=""><span>Testimonials</span><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></a></li>
-													<li id="mobile-menu-item-14200" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="../common-elements/index.html#lists" class=""><span>List Combinations</span><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></a></li>
-													<li id="mobile-menu-item-14201" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="../common-elements/index.html#carousel" class=""><span>Qode Carousel</span><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></a></li>
-													<li id="mobile-menu-item-14202" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="../common-elements/index.html#buttons" class=""><span>Buttons</span><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></a></li>
-													<li id="mobile-menu-item-14203" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="../common-elements/index.html#process" class=""><span>Qode Process</span><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></a></li>
-													<li id="mobile-menu-item-14204" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="../common-elements/index.html#cover_box" class=""><span>Cover Boxes</span><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></a></li>
-												</ul>
-											</li>
-										</ul>
-									</li>
-									<li id="mobile-menu-item-9779" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub"><a href="index.html#" class=""><span>Blog</span><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></a>
-										<ul class="sub_menu">
-											<li id="mobile-menu-item-9888" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="../blog/masonry/index.html" class=""><span>Masonry</span><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></a></li>
-											<li id="mobile-menu-item-14137" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="../masonry-fullwidth/index.html" class=""><span>Masonry Fullwidth</span><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></a></li>
-											<li id="mobile-menu-item-9890" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="../blog/large-image/index.html" class=""><span>Large Image With Sidebar</span><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></a></li>
-											<li id="mobile-menu-item-9891" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="../blog/large-image-2/index.html" class=""><span>Large Image</span><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></a></li>
-											<li id="mobile-menu-item-10741" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub"><a href="index.html#" class=""><span>Single Post</span><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></a>
-												<ul class="sub_menu">
-													<li id="mobile-menu-item-14001" class="menu-item menu-item-type-post_type menu-item-object-post "><a href="../madrids-photographer-marathon/index.html" class=""><span>Post Without Title</span><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></a></li>
-													<li id="mobile-menu-item-10743" class="menu-item menu-item-type-post_type menu-item-object-post "><a href="../josh-woodward-already-there/index.html" class=""><span>Audio Post</span><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></a></li>
-													<li id="mobile-menu-item-10744" class="menu-item menu-item-type-post_type menu-item-object-post "><a href="../icelands-biggest-volcano-timelapse/index.html" class=""><span>Video Post</span><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></a></li>
-													<li id="mobile-menu-item-10747" class="menu-item menu-item-type-post_type menu-item-object-post "><a href="../jeffrey-veen-quote/index.html" class=""><span>Blockquote post</span><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></a></li>
-													<li id="mobile-menu-item-10748" class="menu-item menu-item-type-post_type menu-item-object-post "><a href="../unlocking-brain-secrets/index.html" class=""><span>Link Post</span><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></a></li>
-													<li id="mobile-menu-item-10750" class="menu-item menu-item-type-post_type menu-item-object-post "><a href="../portugal-2013-road-trip-gallery/index.html" class=""><span>Gallery Post</span><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></a></li>
-													<li id="mobile-menu-item-10751" class="menu-item menu-item-type-post_type menu-item-object-post "><a href="../recent-trends-in-storytelling/index.html" class=""><span>Post Without Sidebar</span><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></a></li>
-													<li id="mobile-menu-item-10769" class="menu-item menu-item-type-post_type menu-item-object-post "><a href="../inteligent-transitions-in-ux-design/index.html" class=""><span>Standard Post</span><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></a></li>
-												</ul>
-											</li>
-										</ul>
-									</li>
-									<li id="mobile-menu-item-13533" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children  has_sub"><a href="../shop/index.html" class=""><span>Shop</span><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></a>
-										<ul class="sub_menu">
-											<li id="mobile-menu-item-14003" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="../shop/index.html" class=""><span>Shop With Sidebar</span><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></a></li>
-											<li id="mobile-menu-item-14002" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="../shop-product-list/index.html" class=""><span>Shop Full Width</span><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></a></li>
-										</ul>
-									</li>
-									<li id="mobile-menu-item-13896" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="../contact/index.html" class=""><span>Contact</span><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></a></li>
-									<li id="mobile-menu-item-14039" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub"><a href="index.html#" class=""><span>Wide Menu</span><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></a>
-										<ul class="sub_menu">
-											<li id="mobile-menu-item-14040" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub"><a href="index.html#" class=""><span>Column Example I</span><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></a>
-												<ul class="sub_menu">
-													<li id="mobile-menu-item-14044" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="index.html#" class=""><span>Menu Option One</span><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></a></li>
-													<li id="mobile-menu-item-14045" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="index.html#" class=""><span>Custom Menu Option Two</span><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></a></li>
-													<li id="mobile-menu-item-14046" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="index.html#" class=""><span>Menu Option Three</span><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></a></li>
-													<li id="mobile-menu-item-14047" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="index.html#" class=""><span>Menu Option Four</span><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></a></li>
-													<li id="mobile-menu-item-14048" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="index.html#" class=""><span>Menu Option Five</span><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></a></li>
-												</ul>
-											</li>
-											<li id="mobile-menu-item-14041" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub"><a href="index.html#" class=""><span>Column Example II</span><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></a>
-												<ul class="sub_menu">
-													<li id="mobile-menu-item-14050" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="index.html#" class=""><span>Menu Option One</span><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></a></li>
-													<li id="mobile-menu-item-14051" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="index.html#" class=""><span>Menu Option Two</span><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></a></li>
-													<li id="mobile-menu-item-14052" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="index.html#" class=""><span>Custom Menu Option Three</span><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></a></li>
-													<li id="mobile-menu-item-14053" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="index.html#" class=""><span>Menu Option Four</span><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></a></li>
-													<li id="mobile-menu-item-14054" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="index.html#" class=""><span>Menu Option Five</span><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></a></li>
-												</ul>
-											</li>
-											<li id="mobile-menu-item-14042" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub"><a href="index.html#" class=""><span>Column Example III</span><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></a>
-												<ul class="sub_menu">
-													<li id="mobile-menu-item-14055" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="index.html#" class=""><span>Menu Option One</span><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></a></li>
-													<li id="mobile-menu-item-14056" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="index.html#" class=""><span>Custom Menu Option Two</span><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></a></li>
-													<li id="mobile-menu-item-14057" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="index.html#" class=""><span>Menu Option Three</span><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></a></li>
-													<li id="mobile-menu-item-14058" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="index.html#" class=""><span>Menu Option Four</span><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></a></li>
-													<li id="mobile-menu-item-14059" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="index.html#" class=""><span>Menu Option Five</span><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></a></li>
-												</ul>
-											</li>
-											<li id="mobile-menu-item-14043" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub"><a href="index.html#" class=""><span>Column Example IV</span><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></a>
-												<ul class="sub_menu">
-													<li id="mobile-menu-item-14060" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="index.html#" class=""><span>Menu Option One</span><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></a></li>
-													<li id="mobile-menu-item-14061" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="index.html#" class=""><span>Menu Option Two</span><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></a></li>
-													<li id="mobile-menu-item-14062" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="index.html#" class=""><span>Custom Menu Option Three</span><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></a></li>
-													<li id="mobile-menu-item-14063" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="index.html#" class=""><span>Menu Option Four</span><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></a></li>
-													<li id="mobile-menu-item-14064" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="index.html#" class=""><span>Menu Option Five</span><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></a></li>
-												</ul>
-											</li>
-										</ul>
-									</li>
-								</ul>					</nav>
+									<ul id="menu-top_menu-1" class="">
+										<li id="mobile-menu-item-14139" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children  has_sub">
+											<a href="../index.html" class="">
+												<span>Home</span>
+												<span class="mobile_arrow">
+												<i class="fa fa-angle-right"></i>
+												<i class="fa fa-angle-down"></i></span>
+											</a>
+										</li>
+										<li id="mobile-menu-item-9729" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub">
+											<a href="index.html#" class="">
+												<span>Como funciona?</span>
+												<span class="mobile_arrow">
+													<i class="fa fa-angle-right"></i>
+													<i class="fa fa-angle-down"></i>
+												</span>
+											</a>
+										</li>
+										<li id="mobile-menu-item-10774" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub">
+											<a href="index.html#" class="">
+												<span>Veja em ação</span>
+													<span class="mobile_arrow">
+													<i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i>
+												</span>
+											</a>
+										</li>
+										<li id="mobile-menu-item-9733" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub">
+											<a href="index.html#" class="">
+											<span>Benefícios</span>
+											<span class="mobile_arrow">
+												<i class="fa fa-angle-right"></i>
+												<i class="fa fa-angle-down"></i>
+											</span></a>
+										</li>
+										<li id="mobile-menu-item-9779" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub">
+											<a href="index.html#" class="">
+												<span>Começar</span>
+												<span class="mobile_arrow">
+													<i class="fa fa-angle-right"></i>
+													<i class="fa fa-angle-down"></i>
+												</span>
+											</a>
+										</li>
+										<li id="mobile-menu-item-13533" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children  has_sub">
+											<a href="../shop/index.html" class="">
+												<span>Contato</span><span class="mobile_arrow">
+													<i class="fa fa-angle-right"></i>
+													<i class="fa fa-angle-down"></i>
+												</span>
+											</a>
+										</li>
+										<!--<li id="mobile-menu-item-13896" class="menu-item menu-item-type-post_type menu-item-object-page ">
+											<a href="../contact/index.html" class="">
+												<span>Contact</span>
+												<span class="mobile_arrow">
+													<i class="fa fa-angle-right"></i>
+													<i class="fa fa-angle-down"></i>
+												</span>
+											</a>
+										</li>
+										<li id="mobile-menu-item-14039" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub">
+											<a href="index.html#" class="">
+												<span>Wide Menu</span>
+												<span class="mobile_arrow">
+													<i class="fa fa-angle-right"></i>
+													<i class="fa fa-angle-down"></i>
+												</span>
+											</a>
+										</li>-->
+									</ul>
+								</nav><!--end mobile menu-->
 							</div>
 						</div>
 					</div>
@@ -360,123 +252,193 @@
 						<i class="fa fa-angle-up " style=""></i>
 					</span>
 				</a>
+				<!--aqui vao os scripts de inicio do layerslider originalmente-->
+				
 				<div class="content ">
-					<div class="meta">				
+					<!--div class="meta">				
 						<div class="seo_title">Eden |   Home 2</div>
 						<span id="qode_page_id">13238</span>
-						<div class="body_classes">page,page-id-13238,page-template,page-template-full_width-php,ajax_fade,page_not_loaded,,show_loading_animation,,wpb-js-composer js-comp-ver-3.7.3,vc_responsive</div>
-					</div>
-					<div class="content_inner  ">
+						<div class="body_classes"></div>
+					</div>-->
+					<!--slider-->
+					<div class="content_inner">
 						<div class="q_slider">
 							<div class="q_slider_inner">
-								<script type="text/javascript">var lsjQuery = jQuery;</script>
-								<script type="text/javascript" src="../wp-content/plugins/LayerSlider/static/js/layerslider.kreaturamedia.jquery-ver=5.0.2.js"></script> 
-								<script type="text/javascript" src="../wp-content/plugins/LayerSlider/static/js/greensock-ver=1.11.2.js"></script> 
-								<script type="text/javascript"> lsjQuery(document).ready(function() { if(typeof lsjQuery.fn.layerSlider == "undefined") { lsShowNotice('layerslider_13','jquery'); } else { lsjQuery("#layerslider_13").layerSlider({responsiveUnder: 1100, layersContainer: 1100, pauseOnHover: false, skin: 'noskin', globalBGColor: 'fbfbfb', showCircleTimer: false, skinsPath: 'wp-content/plugins/LayerSlider/static/skins/'}) } });
-								 </script>
+								
 								 <div class="ls-wp-fullwidth-container">
 								 	<div class="ls-wp-fullwidth-helper">
 								 		<div id="layerslider_13" class="ls-wp-container" style="width:100%; height:650px;margin:0 auto;margin-bottom: 0px;">
-									 		<div class="ls-slide" data-ls="slidedelay:3000;transition2d:5;">
+									 		<div class="ls-slide" data-ls="slidedelay:8000;transition2d:5;">
 									 			<img src="img/blank.gif" data-src="img/slide-1.jpg" class="ls-bg" alt="Slide background" />
-								 				<p class="ls-l" style="top:300px;left:220px;font-family:museo300;font-size:70px;line-height:85px;color:#fff;white-space: nowrap;" data-ls="offsetxin:0;durationin:800;offsetxout:0;durationout:800;">Awesome Layer Slider</p>
-								 				<p class="ls-l" style="top:400px;left:70px;font-family:Open Sans;font-size:19px;line-height:22px;color:#ffffff;white-space: nowrap;" data-ls="offsetxin:0;durationin:800;delayin:300;offsetxout:0;durationout:800;">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat.</p></div><div class="ls-slide" data-ls="slidedelay:3000;transition2d:5;">
+								 				<p class="ls-l" style="top:300px;left:130px;font-family:museo300;font-size:70px;line-height:85px;color:#fff;white-space: nowrap;" data-ls="offsetxin:0;durationin:800;offsetxout:0;durationout:800;">
+								 					Você perto dos pacientes
+								 				</p>
+								 				<p class="ls-l" style="top:400px;left:330px;font-family:Open Sans;font-size:19px;line-height:22px;color:#ffffff;white-space: nowrap;" data-ls="offsetxin:0;durationin:800;delayin:300;offsetxout:0;durationout:800;">
+								 					Com atendimento diferenciado, personalizado!
+								 				</p>
+								 			</div>
+								 			<div class="ls-slide" data-ls="slidedelay:80000;transition2d:5;">
 
 									 			<img src="img/blank.gif" data-src="img/slide-2.jpg" class="ls-bg" alt="Slide background" />
-									 			<p class="ls-l" style="top:300px;left:220px;font-family:museo300;font-size:70px;line-height:85px;color:#fff;white-space: nowrap;" data-ls="offsetxin:0;durationin:800;offsetxout:0;durationout:800;">Awesome Layer Slider</p>
-									 			<p class="ls-l" style="top:400px;left:70px;font-family:Open Sans;font-size:19px;line-height:22px;color:#ffffff;white-space: nowrap;" data-ls="offsetxin:0;durationin:800;delayin:300;offsetxout:0;durationout:800;">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat.</p>
+									 			<p class="ls-l" style="top:300px;left:130px;font-family:museo300;font-size:70px;line-height:85px;color:#fff;white-space: nowrap;" data-ls="offsetxin:0;durationin:800;offsetxout:0;durationout:800;">
+									 			Você perto dos pacientes
+									 			</p>
+									 			<p class="ls-l" style="top:400px;left:330px;font-family:Open Sans;font-size:19px;line-height:22px;color:#ffffff;white-space: nowrap;" data-ls="offsetxin:0;durationin:800;delayin:300;offsetxout:0;durationout:800;">
+									 			Com atendimento diferenciado, personalizado!</p>
 									 		</div>
 								 		</div>
 								 	</div>
 								</div>			
 							</div>
-					</div>
-							<div class="full_width">
-								<div class="full_width_inner">
-									<div    class="wpb_row section vc_row-fluid grid_section" style=' padding-top:60px; text-align:left;'><div class=" section_inner clearfix">
-										<div class="vc_span12 wpb_column column_container">
-											<div class="wpb_wrapper">
-												<div    class="wpb_row section vc_row-fluid" style=' text-align:left;'><div class=" clearfix">
-													<div class="vc_span3 wpb_column column_container">
+						</div>
+						
+						<div class="full_width">
+							<div class="full_width_inner">
+									
+								<div class="wpb_row section vc_row-fluid grid_section" style=' border-bottom: 1px solid #ebebeb; padding-top:80px; padding-bottom:68px; text-align:left; '>
+										<div class=" section_inner clearfix">
+											<div class="vc_span12 wpb_column column_container">
+												<div class="wpb_wrapper">
+
+													<div class="wpb_text_column wpb_content_element ">
 														<div class="wpb_wrapper">
-															<div class='q_icon_with_text_elegant large circle'><div class="icon_elegant_holder"><span class="fa-stack fa-4x" style="background-color: #f4f4f4;"><i class="fa fa-clock-o fa-stack-1x" style="color: #EC5126;"></i><span class="icon_elegant_arrow" style="border-color: #f4f4f4 transparent transparent transparent;"></span></span></div><div class="icon_text_elegant_holder"><h4 class="icon_elegant_title" style="">Font Awesome Icons</h4><span class="icon_text_elegant_separator" style=""></span><p style=''>Nam liber tempor cum soluta nobis eleifend option congue nihil</p></div></div><div class="separator  transparent center circle_center " style="margin-top:58px;margin-bottom:0px;"></div>
-
+															<h2 style="text-align: center;">Como funciona o Médico Com Vc?</h2>
 														</div> 
-													</div> 
+													</div> <div class="separator  small center  " style=""><span style=""></span></div>
+													
+												</div> 
+											</div>
 
-													<div class="vc_span3 wpb_column column_container">
-														<div class="wpb_wrapper">
-															<div class='q_icon_with_text_elegant large circle'><div class="icon_elegant_holder"><span class="fa-stack fa-4x" style="background-color: #f4f4f4;"><i class="fa fa-flag fa-stack-1x" style="color: #ec5126;"></i><span class="icon_elegant_arrow" style="border-color: #f4f4f4 transparent transparent transparent;"></span></span></div><div class="icon_text_elegant_holder"><h4 class="icon_elegant_title" style="">Parallax Sections</h4><span class="icon_text_elegant_separator" style=""></span><p style=''>Nam liber tempor cum soluta nobis eleifend option congue nihil</p></div></div><div class="separator  transparent center circle_center " style="margin-top:58px;margin-bottom:0px;"></div>
-
-														</div> 
-													</div> 
-
-													<div class="vc_span3 wpb_column column_container">
-														<div class="wpb_wrapper">
-															<div class='q_icon_with_text_elegant large circle'><div class="icon_elegant_holder"><span class="fa-stack fa-4x" style="background-color: #f4f4f4;"><i class="fa fa-plane fa-stack-1x" style="color: #ec5126;"></i><span class="icon_elegant_arrow" style="border-color: #f4f4f4 transparent transparent transparent;"></span></span></div><div class="icon_text_elegant_holder"><h4 class="icon_elegant_title" style="">Easy Customization</h4><span class="icon_text_elegant_separator" style=""></span><p style=''>Nam liber tempor cum soluta nobis eleifend option congue nihil</p></div></div><div class="separator  transparent center circle_center " style="margin-top:58px;margin-bottom:0px;"></div>
-
-														</div> 
-													</div> 
-
-													<div class="vc_span3 wpb_column column_container">
-														<div class="wpb_wrapper">
-															<div class='q_icon_with_text_elegant large circle'><div class="icon_elegant_holder"><span class="fa-stack fa-4x" style="background-color: #f4f4f4;"><i class="fa fa-html5 fa-stack-1x" style="color: #ec5126;"></i><span class="icon_elegant_arrow" style="border-color: #f4f4f4 transparent transparent transparent;"></span></span></div><div class="icon_text_elegant_holder"><h4 class="icon_elegant_title" style="">Responsive Layout</h4><span class="icon_text_elegant_separator" style=""></span><p style=''>Nam liber tempor cum soluta nobis eleifend option congue nihil</p></div></div><div class="separator  transparent center circle_center " style="margin-top:58px;margin-bottom:0px;"></div>
-
-														</div> 
-													</div> 
-												</div></div>
+											<div class="vc_span12 wpb_column column_container" style="margin-left:0px; margin-top:10px">
+												<div class="wpb_wrapper">
+													<ul class="q_circles_holder three_columns with_line">
+														<li class="q_circle_outer">
+															<span class="q_circle_inner"><span class="q_circle_inner2" style=""><span class="q_circle_inner3">
+																	<img class="q_image_in_circle" src="img/browser.png" alt="Cadastro" />
+															</span></span></span>
+															<div class="q_circle_text_holder">
+																<h4 class="q_circle_title" style="">01 / Cadastro</h4>
+																<p class="q_circle_text" style="">
+																	Primeiro você cadastra o número do celular do paciente ou do parente em nosso site 
+																</p>
+															</div>
+															<span class="line_between_process"><span class="line_between_process_inner"></span></span>
+														</li>
+														<li class="q_circle_outer">
+															<span class="q_circle_inner"><span class="q_circle_inner2" style=""><span class="q_circle_inner3">
+																<img class="q_image_in_circle" src="img/statistics.png" alt="Escolher ou Configurar o Programa" />
+															</span></span></span>
+															<div class="q_circle_text_holder">
+																<h4 class="q_circle_title" style="">02 / Escolha um programa</h4>
+																<p class="q_circle_text" style="">Escolha um de nossos programas pré formatados ou personalize, e deixe do seu jeito
+																</p>
+															</div>
+															<span class="line_between_process"><span class="line_between_process_inner"></span></span>
+														</li>
+														<li class="q_circle_outer">
+															<span class="q_circle_inner"><span class="q_circle_inner2" style=""><span class="q_circle_inner3">
+																<img class="q_image_in_circle" src="img/avatar.png" alt="Inicie o Programa" />
+															</span></span></span>
+															<div class="q_circle_text_holder">
+																<h4 class="q_circle_title" style="">03 / Inicie o programa</h4>
+																<p class="q_circle_text" style="">Inicie o programa, e o nosso sistema irá interagir com seus pacientes. Se houver algo de errado, você será notificado automaticamente
+																</p>
+															</div>
+															<span class="line_between_process"><span class="line_between_process_inner"></span></span>
+														</li>
+													</ul>
+												</div> 
 											</div> 
-										</div> 
-									</div></div><div    class="wpb_row section vc_row-fluid grid_section" style='background-color:#f4f4f4; padding-top:66px; text-align:left;'><div class=" section_inner clearfix">
-									<div class="vc_span6 wpb_column column_container">
-										<div class="wpb_wrapper">
-											<div class="separator  transparent center circle_center " style="margin-top:0px;margin-bottom:0px;"></div>
+										</div>
+									</div>
 
-											<div class="wpb_single_image wpb_content_element vc_align_center  element_from_left">
-												<div style='transition-delay:0.4s'>
-													<div class="wpb_wrapper">
-
-														<img width="420" height="323" src="wp-content/uploads/2014/02/graphic.png" class="attachment-full" alt="q" />
-													</div> 
-												</div>
-											</div> <div class="separator  transparent center circle_center " style="margin-top:61px;margin-bottom:0px;"></div>
-
-										</div> 
-									</div> 
-
-									<div class="vc_span6 wpb_column column_container">
-										<div class="wpb_wrapper">
-
-											<div class="wpb_text_column wpb_content_element ">
+									<div    class="wpb_row section vc_row-fluid grid_section" style='background-color:#f4f4f4; padding-top:66px; text-align:left;'>
+										<div class=" section_inner clearfix">
+											<div class="vc_span6 wpb_column column_container">
 												<div class="wpb_wrapper">
-													<h3>Horizontal Progress Bars</h3>
+													<div class="separator  transparent center circle_center " style="margin-top:0px;margin-bottom:0px;"></div>
+
+													<div class="wpb_single_image wpb_content_element vc_align_center  element_from_left">
+														<div style='transition-delay:0.4s'>
+															<div class="wpb_wrapper">
+
+																<img width="420" height="323" src="img/computer-2.png" alt="Presente" />
+															</div> 
+														</div>
+													</div> <div class="separator  transparent center circle_center " style="margin-top:61px;margin-bottom:0px;"></div>
 
 												</div> 
-											</div> <div class="separator  small left circle_left " style="margin-top:15px;margin-bottom:18px;"><span style=''></span></div>
+											</div> 
 
-											<div class="wpb_text_column wpb_content_element ">
+											<div class="vc_span6 wpb_column column_container">
 												<div class="wpb_wrapper">
-													<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+
+													<div class="wpb_text_column wpb_content_element ">
+														<div class="wpb_wrapper">
+															<h3>Comunicação simplificada</h3>
+
+														</div> 
+													</div> <div class="separator  small left circle_left " style="margin-top:15px;margin-bottom:18px;"><span style=''></span></div>
+
+													<div class="wpb_text_column wpb_content_element ">
+														<div class="wpb_wrapper">
+															<p>Mantenhas-se conectado com todos os seus pacientes simultaneamente através de nossa plataforma de integração por SMS totalmente automatizada.</p>
+														</div> 
+													</div> <div class="separator  transparent center circle_center " style="margin-top:15px;margin-bottom:15px;"></div>
+													<a href="index.html#" target="_self" class="qbutton normal_button_icon small qbutton_with_icon" style="font-weight: 400; "><i class="fa fa-anchor" style=""></i><span>Saiba Mais</span></a><div class="separator  transparent center circle_center " style="margin-top:61px;margin-bottom:0px;"></div>
 
 												</div> 
-											</div> <div class="separator  transparent center circle_center " style="margin-top:15px;margin-bottom:15px;"></div>
-											<a href="index.html#" target="_self" class="qbutton normal_button_icon small qbutton_with_icon" style="font-weight: 400; "><i class="fa fa-anchor" style=""></i><span>See More</span></a><div class="separator  transparent center circle_center " style="margin-top:61px;margin-bottom:0px;"></div>
+											</div> 
+										</div>
+									</div>
 
-										</div> 
-									</div> 
-								</div></div><div    class="wpb_row section vc_row-fluid" style=' text-align:left;'><div class=" clearfix">
-								<div class="vc_span12 wpb_column column_container">
-									<div class="wpb_wrapper">
-										<div class='portfolio_slider_holder clearfix'><div class='portfolio_slider'><ul class='portfolio_slides'><li class='item'><div class='image_holder'><a class='portfolio_link_for_touch' href='../portfolio_page/art-week-2014-malmo/index.html' target='_self'><span class='image'><img src='wp-content/uploads/2013/10/p-art-week-2014-malmo-blau-kunsthaus-identity-480x360.jpg' alt='Art Week 2014 Malmö'></span></a><span class='text_holder'><span class='text_outer'><span class='text_inner'><span class='feature_holder'><span class="feature_holder_info"><h5 class="portfolio_title"><a href="../portfolio_page/art-week-2014-malmo/index.html">Art Week 2014 Malmö</a></h5><span class="separator"></span><span class="project_category">Business</span></span><span class="feature_holder_icons"><a class='lightbox' title='Art Week 2014 Malmö' href='wp-content/uploads/2013/10/p-art-week-2014-malmo-blau-kunsthaus-identity-480x360.jpg' data-rel='prettyPhoto[portfolio_slider]'><i class='fa fa-search-plus fa-2x'></i></a><a class='preview' href='../portfolio_page/art-week-2014-malmo/index.html'><i class='fa fa-link fa-2x'></i></a><span class='portfolio_like'><a class="qode-like" id="qode-like-43" title="Like this"><i class="fa fa-heart"></i><span class="qode-like-count">48</span></a></span></span></span></span></span></span></div></li><li class='item'><div class='image_holder'><a class='portfolio_link_for_touch' href='../portfolio_page/pale-skin-apparel/index.html' target='_self'><span class='image'><img src='wp-content/uploads/2013/10/p-pale-skin-apparel-fast-vector-mobile-480x360.jpg' alt='Pale Skin Apparel'></span></a><span class='text_holder'><span class='text_outer'><span class='text_inner'><span class='feature_holder'><span class="feature_holder_info"><h5 class="portfolio_title"><a href="../portfolio_page/pale-skin-apparel/index.html">Pale Skin Apparel</a></h5><span class="separator"></span><span class="project_category">Art, Photography</span></span><span class="feature_holder_icons"><a class='lightbox' title='Pale Skin Apparel' href='wp-content/uploads/2013/10/p-pale-skin-apparel-fast-vector-mobile-480x360.jpg' data-rel='prettyPhoto[portfolio_slider]'><i class='fa fa-search-plus fa-2x'></i></a><a class='preview' href='../portfolio_page/pale-skin-apparel/index.html'><i class='fa fa-link fa-2x'></i></a><span class='portfolio_like'><a class="qode-like" id="qode-like-157" title="Like this"><i class="fa fa-heart"></i><span class="qode-like-count">62</span></a></span></span></span></span></span></span></div></li><li class='item'><div class='image_holder'><a class='portfolio_link_for_touch' href='../portfolio_page/stv-music-awards-2013/index.html' target='_self'><span class='image'><img src='wp-content/uploads/2013/10/p-stv-music-awards-2013-venice-art-pavilion-480x360.jpg' alt='STV Music Awards 2013'></span></a><span class='text_holder'><span class='text_outer'><span class='text_inner'><span class='feature_holder'><span class="feature_holder_info"><h5 class="portfolio_title"><a href="../portfolio_page/stv-music-awards-2013/index.html">STV Music Awards 2013</a></h5><span class="separator"></span><span class="project_category">Art</span></span><span class="feature_holder_icons"><a class='lightbox' title='STV Music Awards 2013' href='wp-content/uploads/2013/10/p-stv-music-awards-2013-venice-art-pavilion-480x360.jpg' data-rel='prettyPhoto[portfolio_slider]'><i class='fa fa-search-plus fa-2x'></i></a><a class='preview' href='../portfolio_page/stv-music-awards-2013/index.html'><i class='fa fa-link fa-2x'></i></a><span class='portfolio_like'><a class="qode-like" id="qode-like-158" title="Like this"><i class="fa fa-heart"></i><span class="qode-like-count">40</span></a></span></span></span></span></span></span></div></li><li class='item'><div class='image_holder'><a class='portfolio_link_for_touch' href='../portfolio_page/adventures-in-zonderland/index.html' target='_self'><span class='image'><img src='wp-content/uploads/2013/10/p-adventures-in-zonderland-67b-construction-studio-480x360.jpg' alt='Adventures in Design'></span></a><span class='text_holder'><span class='text_outer'><span class='text_inner'><span class='feature_holder'><span class="feature_holder_info"><h5 class="portfolio_title"><a href="../portfolio_page/adventures-in-zonderland/index.html">Adventures in Design</a></h5><span class="separator"></span><span class="project_category">Business</span></span><span class="feature_holder_icons"><a class='lightbox' title='Adventures in Design' href='wp-content/uploads/2013/10/p-adventures-in-zonderland-67b-construction-studio-480x360.jpg' data-rel='prettyPhoto[portfolio_slider]'><i class='fa fa-search-plus fa-2x'></i></a><a class='preview' href='../portfolio_page/adventures-in-zonderland/index.html'><i class='fa fa-link fa-2x'></i></a><span class='portfolio_like'><a class="qode-like" id="qode-like-159" title="Like this"><i class="fa fa-heart"></i><span class="qode-like-count">37</span></a></span></span></span></span></span></span></div></li><li class='item'><div class='image_holder'><a class='portfolio_link_for_touch' href='../portfolio_page/smash-pop-art-storm/index.html' target='_self'><span class='image'><img src='wp-content/uploads/2013/10/p-smash-pop-art-storm-superdollz-showroom-480x360.jpg' alt='Smash Pop Art Storm'></span></a><span class='text_holder'><span class='text_outer'><span class='text_inner'><span class='feature_holder'><span class="feature_holder_info"><h5 class="portfolio_title"><a href="../portfolio_page/smash-pop-art-storm/index.html">Smash Pop Art Storm</a></h5><span class="separator"></span><span class="project_category">Art</span></span><span class="feature_holder_icons"><a class='lightbox' title='Smash Pop Art Storm' href='wp-content/uploads/2013/10/p-smash-pop-art-storm-superdollz-showroom-480x360.jpg' data-rel='prettyPhoto[portfolio_slider]'><i class='fa fa-search-plus fa-2x'></i></a><a class='preview' href='../portfolio_page/smash-pop-art-storm/index.html'><i class='fa fa-link fa-2x'></i></a><span class='portfolio_like'><a class="qode-like" id="qode-like-160" title="Like this"><i class="fa fa-heart"></i><span class="qode-like-count">87</span></a></span></span></span></span></span></span></div></li><li class='item'><div class='image_holder'><a class='portfolio_link_for_touch' href='../portfolio_page/video-performance-festival-2014/index.html' target='_self'><span class='image'><img src='wp-content/uploads/2013/10/p-video-performance-festival-2014-mother-volcano-artwork-480x360.jpg' alt='Festival 2014'></span></a><span class='text_holder'><span class='text_outer'><span class='text_inner'><span class='feature_holder'><span class="feature_holder_info"><h5 class="portfolio_title"><a href="../portfolio_page/video-performance-festival-2014/index.html">Festival 2014</a></h5><span class="separator"></span><span class="project_category">Business, Photography</span></span><span class="feature_holder_icons"><a class='lightbox' title='Festival 2014' href='wp-content/uploads/2013/10/p-video-performance-festival-2014-mother-volcano-artwork-480x360.jpg' data-rel='prettyPhoto[portfolio_slider]'><i class='fa fa-search-plus fa-2x'></i></a><a class='preview' href='../portfolio_page/video-performance-festival-2014/index.html'><i class='fa fa-link fa-2x'></i></a><span class='portfolio_like'><a class="qode-like" id="qode-like-162" title="Like this"><i class="fa fa-heart"></i><span class="qode-like-count">58</span></a></span></span></span></span></span></span></div></li><li class='item'><div class='image_holder'><a class='portfolio_link_for_touch' href='../portfolio_page/art-design-blvd/index.html' target='_self'><span class='image'><img src='wp-content/uploads/2013/10/p-art-design-blvd-amsterdam-jazz-festival-480x360.jpg' alt='Art &#038; Design Blvd'></span></a><span class='text_holder'><span class='text_outer'><span class='text_inner'><span class='feature_holder'><span class="feature_holder_info"><h5 class="portfolio_title"><a href="../portfolio_page/art-design-blvd/index.html">Art &#038; Design Blvd</a></h5><span class="separator"></span><span class="project_category">Art, Business</span></span><span class="feature_holder_icons"><a class='lightbox' title='Art &#038; Design Blvd' href='wp-content/uploads/2013/10/p-art-design-blvd-amsterdam-jazz-festival-480x360.jpg' data-rel='prettyPhoto[portfolio_slider]'><i class='fa fa-search-plus fa-2x'></i></a><a class='preview' href='../portfolio_page/art-design-blvd/index.html'><i class='fa fa-link fa-2x'></i></a><span class='portfolio_like'><a class="qode-like" id="qode-like-163" title="Like this"><i class="fa fa-heart"></i><span class="qode-like-count">84</span></a></span></span></span></span></span></span></div></li><li class='item'><div class='image_holder'><a class='portfolio_link_for_touch' href='../portfolio_page/der-spiegel-cover-art/index.html' target='_self'><span class='image'><img src='wp-content/uploads/2013/10/p-der-spiegel-cover-art-luv-deluxe-3000-480x360.jpg' alt='Der Spiegel Cover Art'></span></a><span class='text_holder'><span class='text_outer'><span class='text_inner'><span class='feature_holder'><span class="feature_holder_info"><h5 class="portfolio_title"><a href="../portfolio_page/der-spiegel-cover-art/index.html">Der Spiegel Cover Art</a></h5><span class="separator"></span><span class="project_category">Business, Photography</span></span><span class="feature_holder_icons"><a class='lightbox' title='Der Spiegel Cover Art' href='wp-content/uploads/2013/10/p-der-spiegel-cover-art-luv-deluxe-3000-480x360.jpg' data-rel='prettyPhoto[portfolio_slider]'><i class='fa fa-search-plus fa-2x'></i></a><a class='preview' href='../portfolio_page/der-spiegel-cover-art/index.html'><i class='fa fa-link fa-2x'></i></a><span class='portfolio_like'><a class="qode-like" id="qode-like-165" title="Like this"><i class="fa fa-heart"></i><span class="qode-like-count">46</span></a></span></span></span></span></span></span></div></li></ul></div></div>
-									</div> 
-								</div> 
-							</div></div><div    class="wpb_row section vc_row-fluid" style=' text-align:center;'><div class="more_facts_holder"><span class="more_facts_button_arrow"><span class="more_facts_button_arrow_inner"></span></span><div class="more_facts_button_holder center"><span class="more_facts_button" data-backgroundcolor="" data-hoverbackgroundcolor="" data-color="" data-hovercolor="" data-morefacts="Open Expandable Section" data-lessfacts="Hide Expandable Section">Open Expandable Section</span></div><div class="more_facts_outer"><div class="more_facts_inner_holder"><div class="more_facts_inner">
+									<div    class="wpb_row section vc_row-fluid grid_section" style=' padding-top:60px; text-align:left;'>
+										<div class=" section_inner clearfix">
+											<div class="vc_span12 wpb_column column_container">
+												<div class="wpb_wrapper">
+													<div    class="wpb_row section vc_row-fluid" style=' text-align:left;'><div class=" clearfix">
+														<div class="vc_span3 wpb_column column_container">
+															<div class="wpb_wrapper">
+																<div class='q_icon_with_text_elegant large circle'><div class="icon_elegant_holder"><span class="fa-stack fa-4x" style="background-color: #f4f4f4;"><i class="fa fa-clock-o fa-stack-1x" style="color: #EC5126;"></i><span class="icon_elegant_arrow" style="border-color: #f4f4f4 transparent transparent transparent;"></span></span></div><div class="icon_text_elegant_holder"><h4 class="icon_elegant_title" style="">Disponibilidade</h4><span class="icon_text_elegant_separator" style=""></span><p style=''>Libera tempo do médico e do administrador,  hoje  gasto  para responder à ligações telefônicas de pacientes e parentes permitindo um acompanhamento  constante do estado do paciente, com o envio de lembretes edicas ou confirmações.</p></div></div><div class="separator  transparent center circle_center " style="margin-top:58px;margin-bottom:0px;"></div>
+
+															</div> 
+														</div> 
+
+														<div class="vc_span3 wpb_column column_container">
+															<div class="wpb_wrapper">
+																<div class='q_icon_with_text_elegant large circle'><div class="icon_elegant_holder"><span class="fa-stack fa-4x" style="background-color: #f4f4f4;"><i class="fa fa-plane fa-stack-1x" style="color: #ec5126;"></i><span class="icon_elegant_arrow" style="border-color: #f4f4f4 transparent transparent transparent;"></span></span></div><div class="icon_text_elegant_holder"><h4 class="icon_elegant_title" style="">Agilidade</h4><span class="icon_text_elegant_separator" style=""></span><p style=''>Agiliza e melhora a saúde dos pacientes ao antecipar problemas ou tendências,  com o acompanhamento por ligações telefônicas convencionais ou consultas físicas.</p></div></div><div class="separator  transparent center circle_center " style="margin-top:58px;margin-bottom:0px;"></div>
+
+															</div> 
+														</div> 
+
+														<div class="vc_span3 wpb_column column_container">
+															<div class="wpb_wrapper">
+																<div class='q_icon_with_text_elegant large circle'><div class="icon_elegant_holder"><span class="fa-stack fa-4x" style="background-color: #f4f4f4;"><i class="fa fa-user fa-stack-1x" style="color: #ec5126;"></i><span class="icon_elegant_arrow" style="border-color: #f4f4f4 transparent transparent transparent;"></span></span></div><div class="icon_text_elegant_holder"><h4 class="icon_elegant_title" style="">Com você</h4><span class="icon_text_elegant_separator" style=""></span><p style=''>Proporciona aos pacientes a sensação de constante atenção que eles requerem nesses casos específicos. É como se o médico estivesse "sempre presente“.</p></div></div><div class="separator  transparent center circle_center " style="margin-top:58px;margin-bottom:0px;"></div>
+
+															</div> 
+														</div> 
+
+														<div class="vc_span3 wpb_column column_container">
+															<div class="wpb_wrapper">
+																<div class='q_icon_with_text_elegant large circle'><div class="icon_elegant_holder"><span class="fa-stack fa-4x" style="background-color: #f4f4f4;"><i class="fa fa-money fa-stack-1x" style="color: #ec5126;"></i><span class="icon_elegant_arrow" style="border-color: #f4f4f4 transparent transparent transparent;"></span></span></div><div class="icon_text_elegant_holder"><h4 class="icon_elegant_title" style="">Maior Retorno</h4><span class="icon_text_elegant_separator" style=""></span><p style=''>Garante que os pacientes retornem  para suas consultas agendadas, e que eles  lembrem-se  da importância de programar as consultas necessárias sem deixar passar muito tempo entre uma e outra.</p></div></div><div class="separator  transparent center circle_center " style="margin-top:58px;margin-bottom:0px;"></div>
+
+															</div> 
+														</div> 
+													</div></div>
+												</div> 
+											</div> 
+										</div>
+									</div>
+
+									
+
+							<div    class="wpb_row section vc_row-fluid" style=' text-align:center;'><div class="more_facts_holder"><span class="more_facts_button_arrow"><span class="more_facts_button_arrow_inner"></span></span><div class="more_facts_button_holder center"><span class="more_facts_button" data-backgroundcolor="" data-hoverbackgroundcolor="" data-color="" data-hovercolor="" data-morefacts="Open Expandable Section" data-lessfacts="Hide Expandable Section">Veja o Médico Com Vc em ação</span></div><div class="more_facts_outer"><div class="more_facts_inner_holder"><div class="more_facts_inner">
 							<div class="vc_span12 wpb_column column_container">
 								<div class="wpb_wrapper">
 
 									<div class="wpb_text_column wpb_content_element ">
 										<div class="wpb_wrapper">
-											<p>I am text block. Click edit button to change this text.</p>
+											<p></p>
 
 										</div> 
 									</div> 
@@ -554,9 +516,9 @@
 					</div> 
 				</div> 
 
-				<div class="vc_span4 wpb_column column_container">
+				<div class="vc_span4 wpb_column column_container" style="display:none">
 					<div class="wpb_wrapper">
-						<ul class="q_icon_list_with_text_outer three"><li class="q_icon_list_with_text_inner"><span class="q_icon_list_with_text_icon_holder q_icon_list_animation" style="transition-delay: 300ms; -webkit-transition-delay: 300ms; -moz-transition-delay: 300ms; -o-transition-delay: 300ms;"><span class="q_icon_list_circle" style=""></span><span class="q_icon_list_with_text_icon"><i class="fa fa-male" style=""></i></span></span><div class="q_icon_list_with_text_holder"><h4 class="q_icon_list_with_text_title" style="">Font Awesome Icons</h4><p class="q_icon_list_with_text_text" style="">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo.</p></div><span class="line_between_circles q_icon_list_animation" style="transition-delay: 330ms; -webkit-transition-delay: 330ms; -moz-transition-delay: 330ms; -o-transition-delay: 330ms;"><span class="line_between_circles_inner q_icon_list_animation" style="transition-delay: 330ms; -webkit-transition-delay: 330ms; -moz-transition-delay: 330ms; -o-transition-delay: 330ms;"></span></span></li><li class="q_icon_list_with_text_inner"><span class="q_icon_list_with_text_icon_holder q_icon_list_animation" style="transition-delay: 600ms; -webkit-transition-delay: 600ms; -moz-transition-delay: 600ms; -o-transition-delay: 600ms;"><span class="q_icon_list_circle" style=""></span><span class="q_icon_list_with_text_icon"><i class="fa fa-flask" style=""></i></span></span><div class="q_icon_list_with_text_holder"><h4 class="q_icon_list_with_text_title" style="">Visual Page Builder</h4><p class="q_icon_list_with_text_text" style="">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo.</p></div><span class="line_between_circles q_icon_list_animation" style="transition-delay: 660ms; -webkit-transition-delay: 660ms; -moz-transition-delay: 660ms; -o-transition-delay: 660ms;"><span class="line_between_circles_inner q_icon_list_animation" style="transition-delay: 660ms; -webkit-transition-delay: 660ms; -moz-transition-delay: 660ms; -o-transition-delay: 660ms;"></span></span></li><li class="q_icon_list_with_text_inner"><span class="q_icon_list_with_text_icon_holder q_icon_list_animation" style="transition-delay: 900ms; -webkit-transition-delay: 900ms; -moz-transition-delay: 900ms; -o-transition-delay: 900ms;"><span class="q_icon_list_circle" style=""></span><span class="q_icon_list_with_text_icon"><i class="fa fa-mobile" style=""></i></span></span><div class="q_icon_list_with_text_holder"><h4 class="q_icon_list_with_text_title" style="">Header With Slider</h4><p class="q_icon_list_with_text_text" style="">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo.</p></div><span class="line_between_circles q_icon_list_animation" style="transition-delay: 990ms; -webkit-transition-delay: 990ms; -moz-transition-delay: 990ms; -o-transition-delay: 990ms;"><span class="line_between_circles_inner q_icon_list_animation" style="transition-delay: 990ms; -webkit-transition-delay: 990ms; -moz-transition-delay: 990ms; -o-transition-delay: 990ms;"></span></span></li></ul><div class="separator  transparent center  " style="margin-top:59px;margin-bottom:0px;"></div>
+						<ul class="q_icon_list_with_text_outer three"><li class="q_icon_list_with_text_inner"><span class="q_icon_list_with_text_icon_holder q_icon_list_animation" style="transition-delay: 300ms; -webkit-transition-delay: 300ms; -moz-transition-delay: 300ms; -o-transition-delay: 300ms;"><span class="q_icon_list_circle" style=""></span><span class="q_icon_list_with_text_icon"><i class="fa fa-male" style=""></i></span></span><div class="q_icon_list_with_text_holder"><h4 class="q_icon_list_with_text_title" style="">Agilidade</h4><p class="q_icon_list_with_text_text" style="">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo.</p></div><span class="line_between_circles q_icon_list_animation" style="transition-delay: 330ms; -webkit-transition-delay: 330ms; -moz-transition-delay: 330ms; -o-transition-delay: 330ms;"><span class="line_between_circles_inner q_icon_list_animation" style="transition-delay: 330ms; -webkit-transition-delay: 330ms; -moz-transition-delay: 330ms; -o-transition-delay: 330ms;"></span></span></li><li class="q_icon_list_with_text_inner"><span class="q_icon_list_with_text_icon_holder q_icon_list_animation" style="transition-delay: 600ms; -webkit-transition-delay: 600ms; -moz-transition-delay: 600ms; -o-transition-delay: 600ms;"><span class="q_icon_list_circle" style=""></span><span class="q_icon_list_with_text_icon"><i class="fa fa-flask" style=""></i></span></span><div class="q_icon_list_with_text_holder"><h4 class="q_icon_list_with_text_title" style="">Visual Page Builder</h4><p class="q_icon_list_with_text_text" style="">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo.</p></div><span class="line_between_circles q_icon_list_animation" style="transition-delay: 660ms; -webkit-transition-delay: 660ms; -moz-transition-delay: 660ms; -o-transition-delay: 660ms;"><span class="line_between_circles_inner q_icon_list_animation" style="transition-delay: 660ms; -webkit-transition-delay: 660ms; -moz-transition-delay: 660ms; -o-transition-delay: 660ms;"></span></span></li><li class="q_icon_list_with_text_inner"><span class="q_icon_list_with_text_icon_holder q_icon_list_animation" style="transition-delay: 900ms; -webkit-transition-delay: 900ms; -moz-transition-delay: 900ms; -o-transition-delay: 900ms;"><span class="q_icon_list_circle" style=""></span><span class="q_icon_list_with_text_icon"><i class="fa fa-mobile" style=""></i></span></span><div class="q_icon_list_with_text_holder"><h4 class="q_icon_list_with_text_title" style="">Header With Slider</h4><p class="q_icon_list_with_text_text" style="">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo.</p></div><span class="line_between_circles q_icon_list_animation" style="transition-delay: 990ms; -webkit-transition-delay: 990ms; -moz-transition-delay: 990ms; -o-transition-delay: 990ms;"><span class="line_between_circles_inner q_icon_list_animation" style="transition-delay: 990ms; -webkit-transition-delay: 990ms; -moz-transition-delay: 990ms; -o-transition-delay: 990ms;"></span></span></li></ul><div class="separator  transparent center  " style="margin-top:59px;margin-bottom:0px;"></div>
 
 					</div> 
 				</div> 
@@ -567,13 +529,10 @@
 
 					</div> 
 				</div> 
-			</div></div><div    class="wpb_row section vc_row-fluid grid_section" style=' border-bottom: 1px solid #ebebeb; padding-top:80px; padding-bottom:68px; text-align:left;'><div class=" section_inner clearfix">
-			<div class="vc_span12 wpb_column column_container">
-				<div class="wpb_wrapper">
-					<ul class="q_circles_holder four_columns with_line"><li class="q_circle_outer"><span class="q_circle_inner"><span class="q_circle_inner2" style=""><span class="q_circle_inner3"><img class="q_image_in_circle" src="wp-content/uploads/2014/01/homeprocess1.png" alt="q" /></span></span></span><div class="q_circle_text_holder"><h4 class="q_circle_title" style="">01 / Side Menu</h4><p class="q_circle_text" style="">Nam liber tempor cum soluta nobis eleifend option congue</p></div><span class="line_between_process"><span class="line_between_process_inner"></span></span></li><li class="q_circle_outer"><span class="q_circle_inner"><span class="q_circle_inner2" style=""><span class="q_circle_inner3"><img class="q_image_in_circle" src="wp-content/uploads/2014/01/homeprocess2.png" alt="q" /></span></span></span><div class="q_circle_text_holder"><h4 class="q_circle_title" style="">02 / Retina Ready</h4><p class="q_circle_text" style="">Nam liber tempor cum soluta nobis eleifend option congue</p></div><span class="line_between_process"><span class="line_between_process_inner"></span></span></li><li class="q_circle_outer"><span class="q_circle_inner"><span class="q_circle_inner2" style=""><span class="q_circle_inner3"><img class="q_image_in_circle" src="wp-content/uploads/2014/01/homeprocess3.png" alt="q" /></span></span></span><div class="q_circle_text_holder"><h4 class="q_circle_title" style="">03 / Demo Content</h4><p class="q_circle_text" style="">Claritas est etiam processus dynamicus, qui sequitur mutationem</p></div><span class="line_between_process"><span class="line_between_process_inner"></span></span></li><li class="q_circle_outer"><span class="q_circle_inner"><span class="q_circle_inner2" style=""><span class="q_circle_inner3"><img class="q_image_in_circle" src="wp-content/uploads/2014/01/homeprocess4.png" alt="q" /></span></span></span><div class="q_circle_text_holder"><h4 class="q_circle_title" style="">04 / Free Support</h4><p class="q_circle_text" style="">Nam liber tempor cum soluta nobis eleifend option congue</p></div><span class="line_between_process"><span class="line_between_process_inner"></span></span></li></ul>
-				</div> 
-			</div> 
-		</div></div><section    data-speed="1" class="parallax_section_holder " style = " height:382px; background-image:url('wp-content/uploads/2014/02/parallax-01.jpg');"><div class="parallax_content left">
+			</div></div>
+			<!-- AQUI ENTRAM OS CÍRCULOS ORIGINALMENTE-->
+			
+		<section    data-speed="1" class="parallax_section_holder " style = " height:382px; background-image:url('wp-content/uploads/2014/02/parallax-01.jpg');"><div class="parallax_content left">
 		<div class="vc_span12 wpb_column column_container">
 			<div class="wpb_wrapper">
 				<div class="separator  transparent center circle_center " style="margin-top:89px;margin-bottom:20px;"></div>
@@ -2268,82 +2227,6 @@
 			</footer>
 		</div>
 	</div>
-	<div id="panel" class="default" style="margin-left: -185px;">   
-		<div id="panel-admin">
-			<h5>Theme Options</h5>
-			<div class="panel-admin-box">
-				<div class="accordion_toolbar">
-					<p class="accordion_toolbar_header">Header Type <i class="fa fa-angle-right"></i></p>
-					<div class="accordion_toolbar_content">
-						<ul id="tootlbar_header_type" class="choose_option">
-							<li data-value="normal">Normal</li>
-							<li data-value="big">Big</li>
-						</ul>
-					</div>
-					<p class="accordion_toolbar_header">Header Top Menu <i class="fa fa-angle-right"></i></p>
-					<div class="accordion_toolbar_content">
-						<ul id="tootlbar_header_top_menu" class="choose_option">
-							<li data-value="yes">Yes</li>
-							<li data-value="no">No</li>
-						</ul>
-					</div>
-					<p class="accordion_toolbar_header">Page Transitions <i class="fa fa-angle-right"></i></p>
-					<div class="accordion_toolbar_content">
-						<ul id="tootlbar_page_transitions" class="choose_option">
-							<li data-value="0">No animation</li>
-							<li data-value="1">Up/Down</li>
-							<li data-value="2">Fade</li>
-							<li data-value="3">Up/Down (In) / Fade (Out)</li>
-							<li data-value="4">Left/Right</li>
-						</ul>
-					</div>
-					<p class="accordion_toolbar_header">Boxed Layout <i class="fa fa-angle-right"></i></p>
-					<div class="accordion_toolbar_content">
-						<ul id="tootlbar_boxed" class="choose_option">
-							<li data-value="boxed">Yes</li>
-							<li data-value="">No</li>
-						</ul>
-					</div>
-					<p class="accordion_toolbar_header">Choose Background <i class="fa fa-angle-right"></i></p>
-					<div class="accordion_toolbar_content">
-						<ul id="tootlbar_background">
-							<li data-value="background1">Background 1</li>
-							<li data-value="background2">Background 2</li>
-							<li data-value="background3">Background 3</li>
-						</ul>
-					</div>
-					<p class="accordion_toolbar_header">Choose Pattern <i class="fa fa-angle-right"></i></p>
-					<div class="accordion_toolbar_content">
-						<ul id="tootlbar_pattern">
-							<li data-value="pattern11">Retina Wood</li>
-							<li data-value="pattern12">Retina Wood Grey</li>
-							<li data-value="pattern1">Transparent</li>
-							<li data-value="pattern3">Cubes</li>
-							<li data-value="pattern4">Diamond</li>
-							<li data-value="pattern5">Escheresque</li>
-							<li data-value="pattern10">Whitediamond</li>
-						</ul>
-					</div>
-					<p class="accordion_toolbar_header">Colors <i class="fa fa-angle-right"></i></p>
-					<div class="accordion_toolbar_content">
-						<div id="tootlbar_colors">
-							<ul>
-								<li><div class="color active color1" data-color="#00c6ff" style="background-color:#00c6ff;"><span>Blue</span></div></li>
-								<li><div class="color color2" data-color="#ff0000" style="background-color:#ff0000;"><span>Red</span></div></li>
-								<li><div class="color color3" data-color="#add200" style="background-color:#add200;"><span>Green</span></div></li>
-								<li><div class="color color4" data-color="#ffc600" style="background-color:#ffc600;"><span>Yellow</span></div></li>
-								<li><div class="color color5" data-color="#352c87" style="background-color:#352c87;"><span>Purple</span></div></li>
-								<li><div class="color color6" data-color="#ffb8e7" style="background-color:#ffb8e7;"><span>Pink</span></div></li>
-
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<a class="open" href="index.html#"><span><i class="fa fa-angle-right"></i><i class="fa fa-angle-left"></i></span></a>
-	</div>
-
 	<!--<link rel='stylesheet' id='js_composer_custom_css-css'  href='wp-content/uploads/js_composer/custom-ver=3.7.3.css' type='text/css' media='screen' />-->
 	<script type='text/javascript'>
 		/* <![CDATA[ */
