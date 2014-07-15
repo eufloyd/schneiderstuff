@@ -78,11 +78,104 @@
 			nav.main_menu ul li a {
 				font-family: 'Open Sans';
 			}
+			
+
+			h1, h2, h3, h4, h5, h6 {
+			    color: #222222;
+			    font-family: 'Open Sans';
+			    font-weight: 400;
+			}
+
+			h3{
+				color: #222;
+				 font-family: 'Open Sans';
+			    font-weight: 400;
+			}
+
 			h2 {
 				font-size: 40px;
 				line-height: 1.111111111111111em;
 				font-family:'Open Sans';
 			}
+
+			h4 a{
+				color: #004983;
+			}
+
+			.text-purple{
+				color: #004983;
+			}
+
+			.in-action-text{
+				line-height: 1.6em;
+				font-size: 14px;
+				text-align:justify;
+			}
+
+			.in-action-text-legend{
+				color: #004983;
+				line-height: 1.6em;
+				font-size: 12px;
+				text-align:center;
+				bottom:15px;
+				position: relative;
+			}
+
+			.steps_holder .circle_small {
+				margin: 0 auto;
+				background-color: #f54325;
+				color: #fff;
+				font-family: 'Oswald',sans-serif;
+				font-size: 26px;
+				border-radius: 7em;
+				text-align: center;
+				-webkit-transition: background-color .4s ease-out;
+				-moz-transition: background-color .4s ease-out;
+				-o-transition: background-color .4s ease-out;
+				transition: background-color .4s ease-out;
+			}
+
+			.steps_holder .circle_small, .steps_holder .circle_small_inner {
+				width: 155px;
+				height: 155px;
+			}
+
+
+			.steps_holder {
+				width: 100%;
+				text-align: center;
+			}
+
+			.step1,.step2,.step3,.step4{width: 25%;float: left;}
+
+			.q_circles_holder.three_columns .q_circle_inner {
+				width: 160px;
+				height: 160px;
+			}
+
+			ul.programs {
+				list-style: none;
+				padding: 0;
+				margin-top: 25px;
+			}
+
+			ul.programs li {
+				list-style-type: none;
+				display: inline-block;
+				padding: 5px 10px;
+				border: 1px solid #FFF;
+				margin-right: 10px;
+				margin-bottom: 10px;
+				border-radius: 6px;
+				color: #FFF;
+			}
+
+			.benefit-text{
+				font-size: 16px;
+				line-height:1.6em;
+				text-align:justify; 
+			}
+
 		</style>
 
 
@@ -99,10 +192,10 @@
 							<div class="header_bottom clearfix" style='' >
 								<div class="header_inner_left">
 									<div class="mobile_menu_button"><span><i class="fa fa-bars"></i></span></div>
-									<!--Ĺogo-->
+									<!--Logo-->
 									<div class="logo_wrapper">
 										<div class="q_logo">
-											<a style="eight: 75px; visibility: visible; font-size: 18px;font-weight:300; margin-top: -10px;font-family:'Open Sans'; color:#00c6ff" href="../index.html">Médico<span style="color:black"> Com</span> Vc</a><!--<img class="normal" src="wp-content/uploads/2014/02/eden-logo-retina1.png" alt="Logo"/><img class="light" src="wp-content/themes/eden/img/logo.png" alt="Logo"/><img class="dark" src="wp-content/themes/eden/img/logo_black.png" alt="Logo"/><img class="sticky" src="wp-content/themes/eden/img/logo_black.png" alt="Logo"/>-->
+											<a style="eight: 75px; visibility: visible; font-size: 18px;font-weight:300; margin-top: -10px;font-family:'Open Sans'; color:black" href="../index.html">Médico com vc</a><!--<img class="normal" src="wp-content/uploads/2014/02/eden-logo-retina1.png" alt="Logo"/><img class="light" src="wp-content/themes/eden/img/logo.png" alt="Logo"/><img class="dark" src="wp-content/themes/eden/img/logo_black.png" alt="Logo"/><img class="sticky" src="wp-content/themes/eden/img/logo_black.png" alt="Logo"/>-->
 										</div>		
 									</div>
 								</div>
@@ -118,34 +211,34 @@
 								<nav class="main_menu drop_down ">
 									<ul id="menu-top_menu" class="">
 										<li id="nav-menu-item-14139" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children  active narrow">
-											<a href="../index.html" class="current">
+											<a href="#home" class="current">
 												<i class="menu_icon fa blank"></i>
 												<span>Home</span>
 												<span class="line"></span>
 											</a>
 										</li>
-										<li id="nav-menu-item-9729" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub narrow">
-											<a href="index.html#" class="">
-												<i class="menu_icon fa blank"></i>
-												<span>Como funciona?</span>
-												<span class="line"></span>
-											</a>
-										</li>
-										<li id="nav-menu-item-10774" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub narrow">
-											<a href="index.html#" class="">
+										<li id="nav-menu-item-9729" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children   narrow ">
+											<a href="#inaction" class="anchor">
 												<i class="menu_icon fa blank"></i>
 												<span>Veja em ação</span>
 												<span class="line"></span>
 											</a>
 										</li>
+										<li id="nav-menu-item-10774" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub narrow">
+											<a href="#how" class="">
+												<i class="menu_icon fa blank"></i>
+												<span>Como funciona?</span>
+												<span class="line"></span>
+											</a>
+										</li>
 										<li id="nav-menu-item-9733" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub narrow">
-											<a href="index.html#" class="">
+											<a href="#benefits" class="">
 												<i class="menu_icon fa blank"></i>
 												<span>Benefícios</span>
 												<span class="line"></span>
 											</a>
 										</li>
-										<li id="nav-menu-item-9779" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub narrow">
+									<!--	<li id="nav-menu-item-9779" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub narrow">
 											<a href="index.html#" class=""><i class="menu_icon fa blank"></i>
 												<span>Começar</span>
 												<span class="line"></span>
@@ -158,7 +251,7 @@
 												<span class="line"></span>
 											</a>
 										</li>
-										<!--<li id="nav-menu-item-13896" class="menu-item menu-item-type-post_type menu-item-object-page  narrow">
+										<li id="nav-menu-item-13896" class="menu-item menu-item-type-post_type menu-item-object-page  narrow">
 											<a href="../contact/index.html" class="">
 												<i class="menu_icon fa blank"></i>
 												<span>Contact</span>
@@ -179,7 +272,7 @@
 								<nav class="mobile_menu">
 									<ul id="menu-top_menu-1" class="">
 										<li id="mobile-menu-item-14139" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children  has_sub">
-											<a href="../index.html" class="">
+											<a href="#home" class="">
 												<span>Home</span>
 												<span class="mobile_arrow">
 												<i class="fa fa-angle-right"></i>
@@ -187,7 +280,15 @@
 											</a>
 										</li>
 										<li id="mobile-menu-item-9729" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub">
-											<a href="index.html#" class="">
+											<a href="#inaction" class="">
+												<span>Veja em ação</span>
+													<span class="mobile_arrow">
+													<i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i>
+												</span>
+											</a>
+										</li>
+										<li id="mobile-menu-item-10774" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub">
+											<a href="#how" class="">
 												<span>Como funciona?</span>
 												<span class="mobile_arrow">
 													<i class="fa fa-angle-right"></i>
@@ -195,23 +296,15 @@
 												</span>
 											</a>
 										</li>
-										<li id="mobile-menu-item-10774" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub">
-											<a href="index.html#" class="">
-												<span>Veja em ação</span>
-													<span class="mobile_arrow">
-													<i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i>
-												</span>
-											</a>
-										</li>
 										<li id="mobile-menu-item-9733" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub">
-											<a href="index.html#" class="">
+											<a href="#benefits" class="">
 											<span>Benefícios</span>
 											<span class="mobile_arrow">
 												<i class="fa fa-angle-right"></i>
 												<i class="fa fa-angle-down"></i>
 											</span></a>
 										</li>
-										<li id="mobile-menu-item-9779" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub">
+										<!--<li id="mobile-menu-item-9779" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub">
 											<a href="index.html#" class="">
 												<span>Começar</span>
 												<span class="mobile_arrow">
@@ -228,7 +321,7 @@
 												</span>
 											</a>
 										</li>
-										<!--<li id="mobile-menu-item-13896" class="menu-item menu-item-type-post_type menu-item-object-page ">
+										<li id="mobile-menu-item-13896" class="menu-item menu-item-type-post_type menu-item-object-page ">
 											<a href="../contact/index.html" class="">
 												<span>Contact</span>
 												<span class="mobile_arrow">
@@ -257,65 +350,40 @@
 						<i class="fa fa-angle-up " style=""></i>
 					</span>
 				</a>
-				<!--aqui vao os scripts de inicio do layerslider originalmente-->
 				
 				<div class="content ">
 
-					<!--div class="meta">				
-						<div class="seo_title">Eden |   Home 2</div>
-						<span id="qode_page_id">13238</span>
-						<div class="body_classes"></div>
-					</div>-->
-					<!--slider-->
 					<div class="content_inner">
-						<!--<div class="q_slider">
-							<div class="q_slider_inner">
-								
-								 <div class="ls-wp-fullwidth-container">
-								 	<div class="ls-wp-fullwidth-helper">
-								 		<div id="layerslider_13" class="ls-wp-container" style="width:100%; height:650px;margin:0 auto;margin-bottom: 0px;">
-									 		<div class="ls-slide" data-ls="slidedelay:8000;transition2d:5;">
-									 			<img src="img/blank.gif" data-src="img/slide-1.jpg" class="ls-bg" alt="Slide background" />
-								 				<p class="ls-l" style="top:300px;left:130px;font-family:museo300;font-size:70px;line-height:85px;color:#fff;white-space: nowrap;" data-ls="offsetxin:0;durationin:800;offsetxout:0;durationout:800;">
-								 					Você perto dos pacientes
-								 				</p>
-								 				<p class="ls-l" style="top:400px;left:330px;font-family:Open Sans;font-size:19px;line-height:22px;color:#ffffff;white-space: nowrap;" data-ls="offsetxin:0;durationin:800;delayin:300;offsetxout:0;durationout:800;">
-								 					Com atendimento diferenciado, personalizado!
-								 				</p>
-								 			</div>
-								 		</div>
-								 	</div>
-								</div>			
-							</div>
-						</div>-->
-						<div class="title_outer title_without_animation"  data-height="650">
-							<div class="title title_size_large position_right  has_fixed_background zoom_out " style="background-size:1980px; background-image:url('img/slide-1-dark.jpg');height:650px;">
-							<div class="container_inner clearfix" >
-									<div class="title_subtitle_holder" style="height:650px; vertical-align:bottom">
-										
-										<div class="title_subtitle_holder_inner element_from_fade" style=" position: relative; width: 64%; bottom:390px">
-											<div style='transition-delay:0.4s; '>
-												<h1 style="color:#ffffff;">
-													<span>Comunicação com seus pacientes. Simplificada.</span>
-												</h1>
+						<div id="home" class="title_outer title_without_animation"  data-height="650">
+							<div class="title title_size_large position_right  has_fixed_background " style="background-size:1980px; background-image:url('img/slide-1-dark.jpg');height:650px;">
+								<div class="container_inner clearfix" >
+										<div class="title_subtitle_holder" style="height:650px; vertical-align:bottom">
+											
+											<div class="title_subtitle_holder_inner element_from_fade" style=" position: relative; width: 64%; bottom:294px">
+												<div style='transition-delay:0.2s;padding-bottom:32px; '>
+													<h1 style="color:#ffffff;">
+														<span>Comunicação com seus pacientes. Simplificada.</span>
+													</h1>
+												</div>
+												<div style='transition-delay:0.4s; margin-top:14px'>
+													<span class="subtitle" style="color:#ffffff;transition-delay:0.5s;">
+														Plataforma de interação via <bold>SMS</bold> totalmente automatizada
+													</span> 
+													<br/>
+													<div class="text" >
+													<a class="qbutton" href="index.html#">Inscreva-se</a>
+													<!--<a style="border-color:#ffffff; color:#ffffff;" class="qbutton transparent_button" href="index.html#">Comece agora</a>-->
+													</div>
+												</div>
 											</div>
-											<div style='transition-delay:0.8s; '>
-												<span class="subtitle" style="color:#ffffff;transition-delay:0.5s;">
-													Plataforma de interação via <bold>SMS</bold> totalmente automatizada
-												</span> 	
-											</div>
+											<div class="wpb_single_image element_from_fade" style="width:23%;">
+
+												<div style='transition-delay:0.8s; '>
+													<img  src="img/iphone-conversation-3.png"  style="top:60px;left:42%" alt="Mécido Com Vc" />
+												</div>
+											</div> 
 										</div>
-										<div class="wpb_single_image element_from_fade" style="width:23%;">
-
-											<div style='transition-delay:0.2s; '>
-												<img  src="img/iphone-conversation-2.png"  style="top:60px;left:42%" alt="Mécido Com Vc" />
-											</div>
-										</div> 
-									</div>
-							</div>
-									
-				
-
+								</div>
 				
 								<div class="image not_responsive" >
 								<!--	<p class="ls-l" style="top:300px;left:130px;font-family:museo300;font-size:70px;line-height:85px;color:#fff;white-space: nowrap;" data-ls="offsetxin:0;durationin:800;offsetxout:0;durationout:800;">
@@ -332,229 +400,642 @@
 						
 						<div class="full_width">
 							<div class="full_width_inner">
-								<div    class="wpb_row section vc_row-fluid grid_section" style='background-color:#00C6FF; padding-top:2px; text-align:center;'>
-											
+								<!-- barra azul-->
+								<div  class="wpb_row section vc_row-fluid grid_section" style='background-color:#00C6FF; padding-top:2px; text-align:center;'>
 								</div>
+							<!--como funciona-->
+
+
+<!--proposta 2-->
+<div    class="wpb_row section vc_row-fluid grid_section" style=' padding-top:57px; padding-bottom:0px; text-align:left;border-bottom:1px solid #ebebeb;'><div class=" section_inner clearfix">
+	<div class="vc_span12 wpb_column column_container">
+		<div class="wpb_wrapper">
+			
+			<div class="wpb_text_column wpb_content_element ">
+				<div class="wpb_wrapper">
+					<h3 style="text-align: center;">Como funciona?</h3>
+
+				</div> 
+			</div> <div class="separator  small center circle_center " style="margin-bottom:46px;background:none"></div>
+			<div    class="wpb_row section vc_row-fluid" style=' text-align:left;'><div class=" clearfix">
+				<div class="vc_span4 wpb_column column_container">
+					<div class="wpb_wrapper">
+						
+						<div class="wpb_single_image wpb_content_element vc_align_left  element_from_left">
+							<div style='transition-delay:0.2s'>
+								<div class="wpb_wrapper" style="text-align:center">
+									<img width="80%"  src="img/cadastre.jpg" style="border-radius:50%" class="attachment-full" alt="q" />
+								</div> 
+							</div>
+						</div> <div class="separator  transparent center circle_center " style="margin-top:10px;margin-bottom:3px;"></div>
+
+						<div class="wpb_text_column wpb_content_element ">
+							<div class="wpb_wrapper">
+								<h4 class="text-purple" style="text-align:center">Cadastre o paciente</h4>
+							</div> 
+						</div> <div class="separator  transparent center circle_center " style="margin-top:8px;margin-bottom:0px;"></div>
+
+						<div class="wpb_text_column wpb_content_element ">
+							<div class="wpb_wrapper" style="text-align:center">
+								<p style="text-align:center">Primeiro você cadastra o número do celular do paciente ou do parente em nosso site.</p>
+
+							</div> 
+						</div> <!--<a href="index.html#" target="_self" class="qbutton stript_button small" style="font-weight: 400; ">Saiba mais <i class="fa fa-angle-right"></i></a>--><div class="separator  transparent center circle_center " style="margin-top:39px;margin-bottom:0px;"></div>
+
+					</div> 
+				</div> 
+
+				<div class="vc_span4 wpb_column column_container">
+					<div class="wpb_wrapper">
+						
+						<div class="wpb_single_image wpb_content_element vc_align_left  element_from_bottom">
+							<div style='transition-delay:0.2s'>
+								<div class="wpb_wrapper" style="text-align:center">
 									
-								<div class="wpb_row section vc_row-fluid grid_section" style=' border-bottom: 1px solid #ebebeb; padding-top:80px; padding-bottom:68px; text-align:left; '>
-										<div class=" section_inner clearfix">
-											<div class="vc_span12 wpb_column column_container">
-												<div class="wpb_wrapper">
+									<img width="80%" src="img/escolha.jpg" style="border-radius:50%" class="attachment-full" alt="q" />
+								</div> 
+							</div>
+						</div> <div class="separator  transparent center circle_center " style="margin-top:10px;margin-bottom:3px;"></div>
 
-													<div class="wpb_text_column wpb_content_element ">
-														<div class="wpb_wrapper">
-															<h2 style="text-align: center;">Veja o Médico Com Vc em ação</h2>
-														</div> 
-													</div> <div class="separator  small center  " style=""><span style=""></span></div>
-													
-												</div> 
-											</div>
+						<div class="wpb_text_column wpb_content_element ">
+							<div class="wpb_wrapper">
+								<h4 class="text-purple" style="text-align:center">Escolha um programa</h4>
 
-											<div class="vc_span12 wpb_column column_container" style="margin-left:0px; margin-top:10px">
-												<div class="wpb_wrapper">
-													<div class="separator  transparent center  " style="margin-top:48px;margin-bottom:0px;"></div>
+							</div> 
+						</div> <div class="separator  transparent center circle_center " style="margin-top:8px;margin-bottom:0px;"></div>
 
-													<div class="wpb_single_image wpb_content_element vc_align_left  element_from_fade">
-														<div style='transition-delay:0.3s; width:310px'>
-															<div class="wpb_wrapper">
+						<div class="wpb_text_column wpb_content_element ">
+							<div class="wpb_wrapper" style="text-align:center">
+								<p style="text-align:center">Depois escolha um de nossos programas pré-formatados ou crie o seu</p>
 
-																<img width="310" height="293" src="img/iphone.png" class="attachment-full" alt="qode" />
-															</div> 
-														</div>
-														<div style='transition-delay:0.6s; width:310px; margin-left:40%'>
-															<div class="wpb_wrapper">
+							</div> 
+						</div><!-- <a href="index.html#" target="_self" class="qbutton stript_button small" style="font-weight: 400; ">Saiba mais<i class="fa fa-angle-right"></i></a>--><div class="separator  transparent center circle_center " style="margin-top:39px;margin-bottom:0px;"></div>
 
-																<img width="310" height="293" src="img/iphone.png" class="attachment-full" alt="qode" />
-															</div> 
-														</div>
-													</div> 
-													<div class="separator  transparent center  " style="margin-top:59px;margin-bottom:0px;"></div>
+					</div> 
+				</div> 
 
-												</div> 
-											</div>
-
-										</div>
-									</div>
-
-									<div    class="wpb_row section vc_row-fluid grid_section" style='background-color:#f4f4f4; padding-top:66px; text-align:left;'>
-										<div class=" section_inner clearfix">
-											<div class="vc_span6 wpb_column column_container">
-												<div class="wpb_wrapper">
-													<div class="separator  transparent center circle_center " style="margin-top:0px;margin-bottom:0px;"></div>
-
-													<div class="wpb_single_image wpb_content_element vc_align_center  element_from_left">
-														<div style='transition-delay:1s'>
-															<div class="wpb_wrapper">
-																<img width="420" height="323" src="img/computer-2.png" alt="Presente" />
-															</div> 
-														</div>
-													</div> <div class="separator  transparent center circle_center " style="margin-top:61px;margin-bottom:0px;"></div>
-
-												</div> 
-											</div> 
-
-											<div class="vc_span6 wpb_column column_container">
-												<div class="wpb_wrapper">
-
-													<div class="wpb_text_column wpb_content_element ">
-														<div class="wpb_wrapper">
-															<h3>Programas de Exemplo</h3>
-
-														</div> 
-													</div> <div class="separator  small left circle_left " style="margin-top:15px;margin-bottom:18px;"><span style=''></span></div>
-
-													<div class="wpb_text_column wpb_content_element ">
-														<div class="wpb_wrapper">
-															<p>Mantenhas-se conectado com todos os seus pacientes simultaneamente através de nossa plataforma de integração por SMS totalmente automatizada.</p>
-														</div> 
-													</div> <div class="separator  transparent center circle_center " style="margin-top:15px;margin-bottom:15px;"></div>
-													<a href="index.html#" target="_self" class="qbutton normal_button_icon small qbutton_with_icon" style="font-weight: 400; "><i class="fa fa-anchor" style=""></i><span>Saiba Mais</span></a><div class="separator  transparent center circle_center " style="margin-top:61px;margin-bottom:0px;"></div>
-
-												</div> 
-											</div> 
-										</div>
-									</div>
-									<div class="wpb_row section vc_row-fluid grid_section" style=' border-bottom: 1px solid #ebebeb; padding-top:80px; padding-bottom:68px; text-align:left; '>
-										<div class=" section_inner clearfix">
-											<div class="vc_span12 wpb_column column_container">
-												<div class="wpb_wrapper">
-
-													<div class="wpb_text_column wpb_content_element ">
-														<div class="wpb_wrapper">
-															<h2 style="text-align: center;">Como funciona?</h2>
-														</div> 
-													</div> <div class="separator  small center  " style=""><span style=""></span></div>
-													
-												</div> 
-											</div>
-
-											<div class="vc_span12 wpb_column column_container" style="margin-left:0px; margin-top:10px">
-												<div class="wpb_wrapper">
-													<ul class="q_circles_holder three_columns with_line">
-														<li class="q_circle_outer">
-															<span class="q_circle_inner"><span class="q_circle_inner2" style=""><span class="q_circle_inner3">
-																	<img class="q_image_in_circle" src="img/browser.png" alt="Cadastro" />
-															</span></span></span>
-															<div class="q_circle_text_holder">
-																<h4 class="q_circle_title" style="">01 / Cadastro</h4>
-																<p class="q_circle_text" style="">
-																	Primeiro você cadastra o número do celular do paciente ou do parente em nosso site 
-																</p>
-															</div>
-															<span class="line_between_process"><span class="line_between_process_inner"></span></span>
-														</li>
-														<li class="q_circle_outer">
-															<span class="q_circle_inner"><span class="q_circle_inner2" style=""><span class="q_circle_inner3">
-																<img class="q_image_in_circle" src="img/statistics.png" alt="Escolher ou Configurar o Programa" />
-															</span></span></span>
-															<div class="q_circle_text_holder">
-																<h4 class="q_circle_title" style="">02 / Escolha um programa</h4>
-																<p class="q_circle_text" style="">Escolha um de nossos programas pré formatados ou personalize, e deixe do seu jeito
-																</p>
-															</div>
-															<span class="line_between_process"><span class="line_between_process_inner"></span></span>
-														</li>
-														<li class="q_circle_outer">
-															<span class="q_circle_inner"><span class="q_circle_inner2" style=""><span class="q_circle_inner3">
-																<img class="q_image_in_circle" src="img/avatar.png" alt="Inicie o Programa" />
-															</span></span></span>
-															<div class="q_circle_text_holder">
-																<h4 class="q_circle_title" style="">03 / Inicie o programa</h4>
-																<p class="q_circle_text" style="">Inicie o programa, e o nosso sistema irá interagir com seus pacientes. Se houver algo de errado, você será notificado automaticamente
-																</p>
-															</div>
-															<span class="line_between_process"><span class="line_between_process_inner"></span></span>
-														</li>
-													</ul>
-												</div> 
-											</div> 
-										</div>
-									</div>
-
-									<div    class="wpb_row section vc_row-fluid grid_section" style=' padding-top:60px; text-align:left;'>
-										<div class=" section_inner clearfix">
-											<div class="vc_span12 wpb_column column_container">
-												<div class="wpb_wrapper">
-													<div    class="wpb_row section vc_row-fluid" style=' text-align:left;'><div class=" clearfix">
-														<div class="vc_span3 wpb_column column_container">
-															<div class="wpb_wrapper">
-																<div class='q_icon_with_text_elegant large circle'><div class="icon_elegant_holder"><span class="fa-stack fa-4x" style="background-color: #f4f4f4;"><i class="fa fa-clock-o fa-stack-1x" style="color: #EC5126;"></i><span class="icon_elegant_arrow" style="border-color: #f4f4f4 transparent transparent transparent;"></span></span></div><div class="icon_text_elegant_holder"><h4 class="icon_elegant_title" style="">Disponibilidade</h4><span class="icon_text_elegant_separator" style=""></span><p style=''>Libera tempo do médico e do administrador,  hoje  gasto  para responder à ligações telefônicas de pacientes e parentes permitindo um acompanhamento  constante do estado do paciente, com o envio de lembretes edicas ou confirmações.</p></div></div><div class="separator  transparent center circle_center " style="margin-top:58px;margin-bottom:0px;"></div>
-
-															</div> 
-														</div> 
-
-														<div class="vc_span3 wpb_column column_container">
-															<div class="wpb_wrapper">
-																<div class='q_icon_with_text_elegant large circle'><div class="icon_elegant_holder"><span class="fa-stack fa-4x" style="background-color: #f4f4f4;"><i class="fa fa-plane fa-stack-1x" style="color: #ec5126;"></i><span class="icon_elegant_arrow" style="border-color: #f4f4f4 transparent transparent transparent;"></span></span></div><div class="icon_text_elegant_holder"><h4 class="icon_elegant_title" style="">Agilidade</h4><span class="icon_text_elegant_separator" style=""></span><p style=''>Agiliza e melhora a saúde dos pacientes ao antecipar problemas ou tendências,  com o acompanhamento por ligações telefônicas convencionais ou consultas físicas.</p></div></div><div class="separator  transparent center circle_center " style="margin-top:58px;margin-bottom:0px;"></div>
-
-															</div> 
-														</div> 
-
-														<div class="vc_span3 wpb_column column_container">
-															<div class="wpb_wrapper">
-																<div class='q_icon_with_text_elegant large circle'><div class="icon_elegant_holder"><span class="fa-stack fa-4x" style="background-color: #f4f4f4;"><i class="fa fa-user fa-stack-1x" style="color: #ec5126;"></i><span class="icon_elegant_arrow" style="border-color: #f4f4f4 transparent transparent transparent;"></span></span></div><div class="icon_text_elegant_holder"><h4 class="icon_elegant_title" style="">Com você</h4><span class="icon_text_elegant_separator" style=""></span><p style=''>Proporciona aos pacientes a sensação de constante atenção que eles requerem nesses casos específicos. É como se o médico estivesse "sempre presente“.</p></div></div><div class="separator  transparent center circle_center " style="margin-top:58px;margin-bottom:0px;"></div>
-
-															</div> 
-														</div> 
-
-														<div class="vc_span3 wpb_column column_container">
-															<div class="wpb_wrapper">
-																<div class='q_icon_with_text_elegant large circle'><div class="icon_elegant_holder"><span class="fa-stack fa-4x" style="background-color: #f4f4f4;"><i class="fa fa-money fa-stack-1x" style="color: #ec5126;"></i><span class="icon_elegant_arrow" style="border-color: #f4f4f4 transparent transparent transparent;"></span></span></div><div class="icon_text_elegant_holder"><h4 class="icon_elegant_title" style="">Maior Retorno</h4><span class="icon_text_elegant_separator" style=""></span><p style=''>Garante que os pacientes retornem  para suas consultas agendadas, e que eles  lembrem-se  da importância de programar as consultas necessárias sem deixar passar muito tempo entre uma e outra.</p></div></div><div class="separator  transparent center circle_center " style="margin-top:58px;margin-bottom:0px;"></div>
-
-															</div> 
-														</div> 
-													</div></div>
-												</div> 
-											</div> 
-										</div>
-									</div>
-
-									<div class="wpb_row section vc_row-fluid" style=' text-align:center;'>
-											<div class="more_facts_holder"><span class="more_facts_button_arrow"><span class="more_facts_button_arrow_inner"></span></span><div class="more_facts_button_holder center"><span class="more_facts_button" data-backgroundcolor="" data-hoverbackgroundcolor="" data-color="" data-hovercolor="" data-morefacts="Veja em ação" data-lessfacts="Veja em ação">Veja em ação</span></div><div class="more_facts_outer"><div class="more_facts_inner_holder"><div class="more_facts_inner">
-											<div class="vc_span12 wpb_column column_container">
-												<div class="wpb_wrapper">
-
-													<div class="wpb_text_column wpb_content_element ">
-														<div class="wpb_wrapper">
-															<p></p>
-
-														</div> 
-													</div> 
-												</div> 
-											</div> 
-										</div></div></div></div>
-									</div>
+				<div class="vc_span4 wpb_column column_container">
+					<div class="wpb_wrapper">
+						
+						<div class="wpb_single_image wpb_content_element vc_align_left  element_from_right">
+							<div style='transition-delay:0.2s'>
+								<div class="wpb_wrapper" style="text-align:center">
 									
-									<div    class="wpb_row section vc_row-fluid grid_section" style=' padding-top:82px; padding-bottom:18px; text-align:left;'>
+									<img width="80%" src="img/inicie.jpg" style="border-radius:50%" class="attachment-full" alt="q" />
+								</div> 
+							</div>
+						</div> <div class="separator  transparent center circle_center " style="margin-top:10px;margin-bottom:3px;"></div>
+
+						<div class="wpb_text_column wpb_content_element ">
+							<div class="wpb_wrapper">
+								<h4 class="text-purple" style="text-align:center">Inicie o programa</h4>
+
+							</div> 
+						</div> <div class="separator  transparent center circle_center " style="margin-top:8px;margin-bottom:0px;"></div>
+
+						<div class="wpb_text_column wpb_content_element ">
+							<div class="wpb_wrapper" style="text-align:center">
+								<p style="text-align:center">Inicie o programa e o nosso sistema irá interagir com seus pacientes atavés de SMSs. Se houver algo de errado, você será notificado automaticamente.</p>
+
+							</div> 
+						</div> <!--<a href="index.html#" target="_self" class="qbutton stript_button small" style="font-weight: 400; ">Saiba mais<i class="fa fa-angle-right"></i></a>--><div class="separator  transparent center circle_center " style="margin-top:39px;margin-bottom:0px;"></div>
+
+					</div> 
+				</div> 
+			</div></div>
+		</div> 
+	</div> 
+</div></div>
+
+						
+							<!--fim como funciona-->
+								<!--em ação-->
+								<div  class="wpb_row section vc_row-fluid grid_section" id="inaction" data-q_id="inaction" style='padding-top:67px; padding-bottom:5px; text-align:left;background:#004983;'>
 									<div class=" section_inner clearfix">
-										<div class="vc_span4 wpb_column column_container">
+										<div class="vc_span12 wpb_column column_container">
 											<div class="wpb_wrapper">
-												<div class="separator  transparent center  " style="margin-top:48px;margin-bottom:0px;"></div>
+												<div class="wpb_text_column wpb_content_element ">
+													<div class="wpb_wrapper">
+														<h3 style="text-align: center;color:white">Veja nossos programas em ação</h3>
+													</div> 
+												</div> 
+												<div class="separator  transparent center circle_center " style="margin-top:47px;margin-bottom:0px;">
+												</div>
+												<h3 style="text-align: center;color:white">Quimioterapia</h3>
+												<div style="margin-top:7px;margin-bottom:0px;" class="separator  transparent center circle_center ">
+												</div>
+												<span class="custom_font_holder " style="color:white;font-family:'Open Sans'; font-size: 20px; line-height: 23px; font-style: normal; font-weight: 300; text-decoration: none; padding: 0; margin: 0; text-align: center;">Programas pré-configurados para diferentes tipos de tratamentos quimioterápicos, que monitorams sintomas e notificam oncologistas e parentes em caso de problemas</span>
+												<div class="separator  small center circle_center " style="margin-top:32px;margin-bottom:42px;background:none">
+												</div>
+											</div> 
+										</div> 
+									</div>
+								</div>
 
-												<div class="wpb_single_image wpb_content_element vc_align_left  element_from_left">
-													<div style='transition-delay:0.3s'>
+								<div class="wpb_row section vc_row-fluid grid_section" style='border-bottom:1px solid #ebebeb; text-align:left;padding-bottom:68px;background:#004983'>
+									<div class=" section_inner clearfix">
+										<div class="vc_span6 wpb_column column_container">
+											<div class="in-action-text-legend" style="margin-left:216px; color:white">
+												Celular do paciente de quimio
+											</div>
+										</div> 
+										<div class="vc_span6 wpb_column column_container">
+											<div class="in-action-text-legend" style="margin-right:252px; color:white">
+												Celular do oncologista
+											</div>
+										</div> 
+									</div>
+									<div class=" section_inner clearfix">
+										<div class="vc_span12 wpb_column column_container">
+											<div class="wpb_wrapper" style="text-align:center">
+												<img width="275px" src="img/daniela-enjoada.png" alt="Médico Com Vc" />	
+												<img  width="297px" style="margin-left:29px" src="img/dr-roberto-paciente.png" alt="Médico Com vc" />
+											</div>
+										</div> 
+									</div>
+								</div>
+								
+								<div    class="wpb_row section vc_row-fluid grid_section" style='padding-top:67px; padding-bottom:5px; text-align:left;'>
+									<div class=" section_inner clearfix">
+										<div class="vc_span12 wpb_column column_container">
+											<div class="wpb_wrapper">
+												<div class="wpb_text_column wpb_content_element ">
+													<div class="wpb_wrapper">
+														<h3 style="text-align: center;">Pré e Pós-Cirurgia</h3>
+													</div>
+												</div> 
+												<div class="separator  transparent center circle_center " style="margin-top:7px;margin-bottom:0px;">
+												</div>
+												<span class="custom_font_holder text-purple" style="font-family:'Open Sans'; font-size: 20px; line-height: 23px; font-style: normal; font-weight: 300; text-decoration: none; padding: 0; margin: 0; text-align: center;">Hospitais estão reduzindo a re-internação e melhorando a eficiência operacional com programas pré e pós-sirúrgicos que monitoram dor, inchaço e efeitos de medicações</span>
+												<div class="separator  small center circle_center " style="margin-top:32px;margin-bottom:42px;background:none">
+
+												</div>
+											</div> 
+										</div> 
+									</div>
+								</div>
+
+								<div class="wpb_row section vc_row-fluid grid_section" style=' text-align:left; border-bottom: 1px solid #ebebeb;padding-bottom:60px'>
+									<div class=" section_inner clearfix">
+										<div class="vc_span6 wpb_column column_container">
+											<div class="in-action-text-legend" style="margin-left:216px">
+												Celular de paciente de cirurgia LAC
+
+											</div>
+										</div> 
+										<div class="vc_span6 wpb_column column_container">
+											<div class="in-action-text-legend" style="margin-right:236px">
+												Celular de paciente de cirurgia LAC
+											</div>
+										</div> 
+									</div>
+									<div class=" section_inner clearfix">
+										<div class="vc_span12 wpb_column column_container">
+											<div class="wpb_wrapper" style="text-align:center">
+												
+												<img width="300px" src="img/fernando-sua-cirugia.png" alt="Médico com vc" style="padding-right:47px"/>
+												<img  width="300px" src="img/fernando-nivel-dor.png" alt="Médico com vc" />
+											</div>
+										</div> 
+									</div>
+								</div>
+								
+								<section    data-speed="1" class="parallax_section_holder " style = " height:500px; background-image:url('img/elder-woman.jpg'); background-size:fit">
+									<div class="parallax_content left" style="top:27%">
+										<div class="vc_span12 wpb_column column_container">
+											<div class="wpb_wrapper">
+												<div class="separator  transparent center circle_center " style="margin-top:92px;"></div>
+
+												<div class="wpb_text_column wpb_content_element ">
+													<div class="wpb_wrapper">
+														<h3 style="text-align: center;"><span style="color: #ffffff;">Gere engajamento, eduque e atenda todos os seus pacientes de forma personalizada, sem a necessidade de um smartphone</span></h3>
+
+													</div> 
+												</div> 
+												
+											</div> 
+										</div> 
+									</div>
+								</section>
+
+								<div class="wpb_row section vc_row-fluid grid_section" style='padding-top:67px; padding-bottom:5px; text-align:left;'>
+									<div class=" section_inner clearfix">
+										<div class="vc_span12 wpb_column column_container">
+											<div class="wpb_wrapper">
+												<div class="wpb_text_column wpb_content_element ">
+													<div class="wpb_wrapper">
+														<h3 style="text-align: center;">Acompanhamento de pacientes crônicos</h3>
+													</div>
+												</div> 
+												<div class="separator  transparent center circle_center " style="margin-top:7px;margin-bottom:0px;">
+												</div>
+												<span class="custom_font_holder text-purple" style="font-family:'Open Sans'; font-size: 20px; line-height: 23px; font-style: normal; font-weight: 300; text-decoration: none; padding: 0; margin: 0; text-align: center;">Médicos estão ajudando seus pacientes crônicos a controlar suas doenças com programas de longo prazo, focados em educar,incentivar mudanças de comportamento e garantindo que compareçam as consultas</span>
+												<div class="separator  small center circle_center " style="margin-top:32px;margin-bottom:42px;background:none	">
+												</div>
+											</div> 
+										</div> 
+									</div>
+								</div>
+
+								<div class="wpb_row section vc_row-fluid grid_section" style=' text-align:left; border-bottom: 1px solid #ebebeb; padding-bottom:60px'>
+									<div class=" section_inner clearfix">
+										<div class="vc_span12 wpb_column column_container">
+											<div class="wpb_wrapper" style="text-align:center">
+												<p class="in-action-text-legend">
+													Programa de diabetes
+												</p>
+												<img width="300px" src="img/glicemia-manha.jpg" alt="Médico Com Vc" />	
+											</div>
+										</div> 
+										
+									<!--	<div class="vc_span4 wpb_column column_container">
+											<div class="wpb_wrapper" style="text-align:center">
+												
+											</div> 
+										</div> -->
+									</div>
+								</div>
+							<!--fim  em acao-->
+
+							<section    data-speed="1" class="parallax_section_holder " style=" height:650px; background-image:url('img/elder-man-2.jpg'); background-size:fit">
+									<div class="parallax_content left" style="top:27%">
+										<div class="vc_span12 wpb_column column_container">
+											<div class="wpb_wrapper">
+												<div class="separator  transparent center circle_center " style="margin-top:92px;"></div>
+
+												<div class="wpb_text_column wpb_content_element ">
+													<div class="wpb_wrapper">
+														<h3 style="text-align: center;"><span style="color: #ffffff;">Gere engajamento, eduque e atenda todos os seus pacientes de forma personalizada, sem a necessidade de um smartphone</span></h3>
+
+													</div> 
+												</div> 
+												
+											</div> 
+										</div> 
+									</div>
+								</section>
+								<div class="wpb_row section vc_row-fluid grid_section" style='padding-top:60px; padding-bottom:5px; text-align:left; background:#004983'>
+								<div class=" section_inner clearfix">
+									<div class="vc_span12 wpb_column column_container">
+										<div class="wpb_wrapper">
+											<div class="wpb_text_column wpb_content_element ">
+												<div class="wpb_wrapper">
+													<h3 style="text-align: center;color:#FFF">Utilize um de nossos programas pré-configurados ou crie o seu</h3>
+												</div>
+											</div> 
+											<div class="separator  transparent center circle_center " style="margin-top:7px;margin-bottom:0px;">
+											</div>
+										</div> 
+									</div> 
+								</div>
+							</div>
+
+							<div class="wpb_row section vc_row-fluid grid_section" style='background:#004983;padding-bottom:50px; text-align:left;'>
+								<div class=" section_inner clearfix">
+									<div class="vc_span12  wpb_column column_container" style="text-align:center">
+
+										<div class="wpb_wrapper">
+											<ul class="programs">
+												<li>Quimioterapia</li>
+												<li>Radioterapia</li>
+												<li>Cirurgias Ortopédicas</li>
+												<li>Cirurgias Gastrintestinais</li>
+												<li>Cirurgias Plásticas</li>
+												<li>Saúde Mental</li>
+												<li>Nutrição</li>
+												<li>Diabetes</li>
+												<li>Hipertensão</li>
+												<li>Insuficiência Cardíaca Congestiva</li>
+											</ul>
+											<span class="custom_font_holder" style="font-family:'Open Sans'; font-size: 20px; line-height: 23px; font-style: normal; font-weight: 300; text-decoration: none; padding: 0; margin-top:20px; text-align: center;color:#FFF">E muito mais ...</span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!--benefícios
+							<div id="benefits" class="wpb_row section vc_row-fluid grid_section" style="background-color:#222222; padding-top:52px; padding-bottom:48px; text-align:left;"><div class=" section_inner clearfix">
+								<div class="vc_span12 wpb_column column_container">
+									<div class="wpb_wrapper">
+										<div class="wpb_row section vc_row-fluid" style=" text-align:right;"><div class=" clearfix">
+											<div class="vc_span12 wpb_column column_container">
+												<div class="wpb_wrapper" style="text-align:center">
+													<span class="custom_font_holder" style="font-size: 20px; line-height: 39px; font-style: normal; font-weight: 300; color: #ffffff; text-decoration: none; padding: 0; margin: 0; "><p></p>
+														<p >Benefícios ao se utilizar o Médico Com Vc</p>
+														<p>
+														</p></span></div> 
+													</div> 
+												</div></div>
+											</div> 
+										</div> 
+									
+									</div></div>
+
+							<div  class="wpb_row section vc_row-fluid grid_section" style=' padding-top:60px; text-align:left;'>
+									<div class=" section_inner clearfix">
+										<div class="vc_span12 wpb_column column_container">
+											<div class="wpb_wrapper">
+												<div    class="wpb_row section vc_row-fluid" style=' text-align:left;'><div class=" clearfix">
+													<div class="vc_span3 wpb_column column_container">
 														<div class="wpb_wrapper">
+														<div class='q_icon_with_text_elegant large circle'>
+														<div class="icon_elegant_holder">
+															<img src="img/6.png" style="width:62px">
 
-															<img width="310" height="293" src="img/iphone.png" class="attachment-full" alt="qode" />
+														</div>
+														<div class="icon_text_elegant_holder">
+
+															<h4 class="icon_elegant_title" style="">
+																Disponibilidade</h4><span class="icon_text_elegant_separator" style=""></span>
+																<p class="in-action-text">
+																	Libera tempo do médico e do administrador,  hoje  gasto  para responder à ligações telefônicas de pacientes e parentes permitindo um acompanhamento  constante do estado do paciente, com o envio de lembretes edicas ou confirmações.
+																</p>
+														</div></div><div class="separator  transparent center circle_center " style="margin-top:58px;margin-bottom:0px;"></div>
+
+													</div> 
+																		</div> 
+
+													<div class="vc_span3 wpb_column column_container">
+														<div class="wpb_wrapper">
+															<div class='q_icon_with_text_elegant large circle'><div class="icon_elegant_holder"><img src="img/16.png" width="32px"></div><div class="icon_text_elegant_holder"><h4 class="icon_elegant_title" style="">Agilidade</h4><span class="icon_text_elegant_separator" style=""></span><p class="in-action-text">Agiliza e melhora a saúde dos pacientes ao antecipar problemas ou tendências,  com o acompanhamento por ligações telefônicas convencionais ou consultas físicas.</p></div></div><div class="separator  transparent center circle_center " style="margin-top:58px;margin-bottom:0px;"></div>
+
+														</div> 
+													</div> 
+
+													<div class="vc_span3 wpb_column column_container">
+														<div class="wpb_wrapper">
+															<div class='q_icon_with_text_elegant large circle'><div class="icon_elegant_holder"><img src="img/11.png" width="72px"></div><div class="icon_text_elegant_holder"><h4 class="icon_elegant_title" style="">Com você</h4><span class="icon_text_elegant_separator" style=""></span><p class="in-action-text">Proporciona aos pacientes a sensação de constante atenção que eles requerem nesses casos específicos. É como se o médico estivesse "sempre presente“.</p></div></div><div class="separator  transparent center circle_center " style="margin-top:58px;margin-bottom:0px;"></div>
+
+														</div> 
+													</div> 
+
+													<div class="vc_span3 wpb_column column_container">
+														<div class="wpb_wrapper">
+															<div class='q_icon_with_text_elegant large circle'><div class="icon_elegant_holder">
+																<img src="img/17.png" width="62px">
+															</div><div class="icon_text_elegant_holder"><h4 class="icon_elegant_title" style="">Maior Retorno</h4><span class="icon_text_elegant_separator" style=""></span><p class="in-action-text">Garante que os pacientes retornem  para suas consultas agendadas, e que eles  lembrem-se  da importância de programar as consultas necessárias sem deixar passar muito tempo entre uma e outra.</p></div></div><div class="separator  transparent center circle_center " style="margin-top:58px;margin-bottom:0px;"></div>
+
+														</div> 
+													</div> 
+												</div></div>
+											</div> 
+										</div> 
+									</div>
+								</div>-->
+								
+								<div   class="wpb_row section vc_row-fluid grid_section" style='background-color:#f4f4f4; padding-top:66px; text-align:left;'>
+									<div class=" section_inner clearfix">
+										<div class="vc_span12 wpb_column column_container">
+											<div class="wpb_wrapper">
+												<h3 style="text-align: center;">Benefícios pra quem usa o Médico com vc </h3>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div    class="wpb_row section vc_row-fluid grid_section" style='background-color:#f4f4f4; padding-top:66px; text-align:left;'>
+									<div class=" section_inner clearfix">
+
+										<div class="vc_span6 wpb_column column_container">
+											<div class="wpb_wrapper">
+												<div class="separator  transparent center circle_center " style="margin-top:0px;margin-bottom:0px;"></div>
+
+												<div class="wpb_single_image wpb_content_element vc_align_center  element_from_left">
+													<div style='transition-delay:1s'>
+														<div class="wpb_wrapper">
+															<img width="420" height="323" src="img/computer-2.png" alt="Presente" />
 														</div> 
 													</div>
-												</div> <div class="separator  transparent center  " style="margin-top:59px;margin-bottom:0px;"></div>
+												</div> <div class="separator  transparent center circle_center " style="margin-top:61px;margin-bottom:0px;"></div>
+
 											</div> 
+										</div> 
+
+										<div class="vc_span6 wpb_column column_container">
+											<div class="wpb_wrapper">
+
+												<div class="wpb_text_column wpb_content_element" style="padding-bottom:20px">
+													<div class="wpb_wrapper">
+														<h3>Disponibilidade</h3>
+													</div> 
+												</div> 
+
+												<div class="wpb_text_column wpb_content_element ">
+													<div class="wpb_wrapper">
+														<p class="benefit-text"> Libera tempo do médico e do administrador, hoje gasto para responder à ligações telefônicas de pacientes e parentes permitindo um acompanhamento constante do estado do paciente, com o envio de lembretes edicas ou confirmações. </p>
+													</div> 
+												</div> <div class="separator  transparent center circle_center " style="margin-top:15px;margin-bottom:15px;"></div>
+												<!--<a href="index.html#" target="_self" class="qbutton normal_button_icon small qbutton_with_icon" style="font-weight: 400; "><i class="fa fa-anchor" style=""></i><span>Saiba Mais</span></a>--><div class="separator  transparent center circle_center " style="margin-top:61px;margin-bottom:0px;"></div>
+
+											</div> 
+										</div> 
+									</div>
+								</div>
+
+								<div    class="wpb_row section vc_row-fluid grid_section" style='padding-top:66px; text-align:left;'>
+									<div class=" section_inner clearfix">
+
+										<div class="vc_span6 wpb_column column_container">
+											<div class="wpb_wrapper">
+
+												<div class="wpb_text_column wpb_content_element" style="padding-bottom:20px">
+													<div class="wpb_wrapper">
+														<h3>Agilidade</h3>
+													</div> 
+												</div> 
+
+												<div class="wpb_text_column wpb_content_element ">
+													<div class="wpb_wrapper">
+														<p class="benefit-text">Agiliza e melhora a saúde dos pacientes ao antecipar problemas ou tendências,  com o acompanhamento por ligações telefônicas convencionais ou consultas físicas. </p>
+													</div> 
+												</div> <div class="separator  transparent center circle_center " style="margin-top:15px;margin-bottom:15px;"></div>
+												<div class="separator  transparent center circle_center " style="margin-top:61px;margin-bottom:0px;"></div>
+
 											</div> 
 										</div>
+
+										<div class="vc_span6 wpb_column column_container">
+											<div class="wpb_wrapper">
+												<div class="separator  transparent center circle_center " style="margin-top:0px;margin-bottom:0px;"></div>
+
+												<div class="wpb_single_image wpb_content_element vc_align_center  element_from_left">
+													<div style='transition-delay:1s'>
+														<div class="wpb_wrapper">
+															<img width="420" height="323" src="img/computer-2.png" alt="Presente" />
+														</div> 
+													</div>
+												</div> <div class="separator  transparent center circle_center " style="margin-top:61px;margin-bottom:0px;"></div>
+
+											</div> 
+										</div> 
 									</div>
-									
-									<!-- AQUI ENTRAM OS CÍRCULOS ORIGINALMENTE-->
-									
-									<div    class="wpb_row section vc_row-fluid grid_section" style='background-color:#f4f4f4; padding-top:52px; padding-bottom:50px; text-align:center;'>
-										<div class=" section_inner clearfix">
-											<div class="vc_span12 wpb_column column_container">
+								</div>
+
+								<div    class="wpb_row section vc_row-fluid grid_section" style='background-color:#f4f4f4; padding-top:66px; text-align:left;'>
+									<div class=" section_inner clearfix">
+										<div class="vc_span6 wpb_column column_container">
+											<div class="wpb_wrapper">
+												<div class="separator  transparent center circle_center " style="margin-top:0px;margin-bottom:0px;"></div>
+
+												<div class="wpb_single_image wpb_content_element vc_align_center  element_from_left">
+													<div style='transition-delay:1s'>
+														<div class="wpb_wrapper">
+															<img width="420" height="323" src="img/computer-2.png" alt="Presente" />
+														</div> 
+													</div>
+												</div> <div class="separator  transparent center circle_center " style="margin-top:61px;margin-bottom:0px;"></div>
+
+											</div> 
+										</div> 
+
+										<div class="vc_span6 wpb_column column_container">
+											<div class="wpb_wrapper">
+
+												<div class="wpb_text_column wpb_content_element" style="padding-bottom:20px">
+													<div class="wpb_wrapper">
+														<h3>Presença</h3>
+													</div> 
+												</div> 
+
+												<div class="wpb_text_column wpb_content_element ">
+													<div class="wpb_wrapper">
+														<p class="benefit-text"> Proporciona aos pacientes a sensação de constante atenção que eles requerem nesses casos específicos. É como se o médico estivesse "sempre presente. </p>
+													</div> 
+												</div> <div class="separator  transparent center circle_center " style="margin-top:15px;margin-bottom:15px;"></div>
+												<div class="separator  transparent center circle_center " style="margin-top:61px;margin-bottom:0px;"></div>
+
+											</div> 
+										</div> 
+									</div>
+								</div>
+
+								<div    class="wpb_row section vc_row-fluid grid_section" style='padding-top:66px; text-align:left;border-bottom:1px solid #ebebeb'>
+									<div class=" section_inner clearfix">
+
+										<div class="vc_span6 wpb_column column_container">
+											<div class="wpb_wrapper">
+
+												<div class="wpb_text_column wpb_content_element" style="padding-bottom:20px">
+													<div class="wpb_wrapper">
+														<h3>Retorno</h3>
+													</div> 
+												</div> 
+
+												<div class="wpb_text_column wpb_content_element ">
+													<div class="wpb_wrapper">
+														<p class="benefit-text">Garante que os pacientes retornem  para suas consultas agendadas, e que eles  lembrem-se  da importância de programar as consultas necessárias sem deixar passar muito tempo entre uma e outra. </p>
+													</div> 
+												</div> <div class="separator  transparent center circle_center " style="margin-top:15px;margin-bottom:15px;"></div>
+												<div class="separator  transparent center circle_center " style="margin-top:61px;margin-bottom:0px;"></div>
+
+											</div> 
+										</div>
+
+										<div class="vc_span6 wpb_column column_container">
+											<div class="wpb_wrapper">
+												<div class="separator  transparent center circle_center " style="margin-top:0px;margin-bottom:0px;"></div>
+
+												<div class="wpb_single_image wpb_content_element vc_align_center  element_from_left">
+													<div style='transition-delay:1s'>
+														<div class="wpb_wrapper">
+															<img width="420" height="323" src="img/computer-2.png" alt="Presente" />
+														</div> 
+													</div>
+												</div> <div class="separator  transparent center circle_center " style="margin-top:61px;margin-bottom:0px;"></div>
+
+											</div> 
+										</div> 
+									</div>
+								</div>
+							
+
+
+						<!--	<div class="wpb_row section vc_row-fluid grid_section" style='background-color:#f4f4f4; padding-top:66px; text-align:left;'>
+								<div class=" section_inner clearfix">
+									<div class="vc_span6 wpb_column column_container">
+										<div class="wpb_wrapper">
+											<div class="separator  transparent center circle_center " style="margin-top:0px;margin-bottom:0px;"></div>
+
+											<div class="wpb_single_image wpb_content_element vc_align_center  element_from_left">
+												<div style='transition-delay:1s'>
+													<div class="wpb_wrapper">
+														<img width="420" height="323" src="img/computer-2.png" alt="Presente" />
+													</div> 
+												</div>
+											</div> <div class="separator  transparent center circle_center " style="margin-top:61px;margin-bottom:0px;"></div>
+
+										</div> 
+									</div> 
+
+									<div class="vc_span6 wpb_column column_container">
+										<div class="wpb_wrapper">
+
+											<div class="wpb_text_column wpb_content_element ">
 												<div class="wpb_wrapper">
-													<span class="custom_font_holder" style="font-family: museo300; font-size: 20px; line-height: 24px; font-style: normal; font-weight: 100; text-decoration: none; padding: 0; margin: 0; text-align: center;">Uma frase sobre o uso do site, e as conversas telefônicas acima e preparacao para os fatos </span>
+													<h3>Programas de Exemplo</h3>
+
+												</div> 
+											</div> <div class="separator  small left circle_left " style="margin-top:15px;margin-bottom:18px;"><span style=''></span></div>
+
+											<div class="wpb_text_column wpb_content_element ">
+												<div class="wpb_wrapper">
+													<p>Mantenhas-se conectado com todos os seus pacientes simultaneamente através de nossa plataforma de integração por SMS totalmente automatizada.</p>
+												</div> 
+											</div> <div class="separator  transparent center circle_center " style="margin-top:15px;margin-bottom:15px;"></div>
+											<a href="index.html#" target="_self" class="qbutton normal_button_icon small qbutton_with_icon" style="font-weight: 400; "><i class="fa fa-anchor" style=""></i><span>Saiba Mais</span></a><div class="separator  transparent center circle_center " style="margin-top:61px;margin-bottom:0px;"></div>
+
+										</div> 
+									</div> 
+								</div>
+							</div>
+
+							
+
+								<div class="wpb_row section vc_row-fluid" style=' text-align:center;'>
+										<div class="more_facts_holder"><span class="more_facts_button_arrow"><span class="more_facts_button_arrow_inner"></span></span><div class="more_facts_button_holder center"><span class="more_facts_button" data-backgroundcolor="" data-hoverbackgroundcolor="" data-color="" data-hovercolor="" data-morefacts="Veja em ação" data-lessfacts="Veja em ação">Veja em ação</span></div><div class="more_facts_outer"><div class="more_facts_inner_holder"><div class="more_facts_inner">
+										<div class="vc_span12 wpb_column column_container">
+											<div class="wpb_wrapper">
+
+												<div class="wpb_text_column wpb_content_element ">
+													<div class="wpb_wrapper">
+														<p></p>
+
+													</div> 
 												</div> 
 											</div> 
-										</div>
+										</div> 
+									</div></div></div></div>
+								</div>
+								
+								<div    class="wpb_row section vc_row-fluid grid_section" style=' padding-top:82px; padding-bottom:18px; text-align:left;'>
+								<div class=" section_inner clearfix">
+									<div class="vc_span4 wpb_column column_container">
+										<div class="wpb_wrapper">
+											<div class="separator  transparent center  " style="margin-top:48px;margin-bottom:0px;"></div>
+
+											<div class="wpb_single_image wpb_content_element vc_align_left  element_from_left">
+												<div style='transition-delay:0.3s'>
+													<div class="wpb_wrapper">
+
+														<img width="310" height="293" src="img/iphone.png" class="attachment-full" alt="qode" />
+													</div> 
+												</div>
+											</div> <div class="separator  transparent center  " style="margin-top:59px;margin-bottom:0px;"></div>
+										</div> 
+										</div> 
 									</div>
+								</div>
+									
+								
+								<div class="wpb_row section vc_row-fluid grid_section" style='background-color:#f4f4f4; padding-top:52px; padding-bottom:50px; text-align:center;'>
+									<div class=" section_inner clearfix">
+										<div class="vc_span12 wpb_column column_container">
+											<div class="wpb_wrapper">
+												<span class="custom_font_holder" style="font-family: museo300; font-size: 20px; line-height: 24px; font-style: normal; font-weight: 100; text-decoration: none; padding: 0; margin: 0; text-align: center;">Uma frase sobre o uso do site, e as conversas telefônicas acima e preparacao para os fatos </span>
+											</div> 
+										</div> 
+									</div>
+								</div>
 
 									<div    class="wpb_row section vc_row-fluid grid_section" style='background-color:#292929; padding-top:45px; padding-bottom:9px; text-align:left;'><div class=" section_inner clearfix">
 										<div class="vc_span12 wpb_column column_container">
@@ -597,85 +1078,52 @@
 												</div></div>
 											</div> 
 										</div> 
-								</div></div>
-
-								<!-- duplicado pra enxer o espaço-->
-								<div    class="wpb_row section vc_row-fluid grid_section" style=' padding-top:60px; text-align:left;'>
-										<div class=" section_inner clearfix">
-											<div class="vc_span12 wpb_column column_container">
-												<div class="wpb_wrapper">
-													<div    class="wpb_row section vc_row-fluid" style=' text-align:left;'><div class=" clearfix">
-														<div class="vc_span3 wpb_column column_container">
-															<div class="wpb_wrapper">
-																<div class='q_icon_with_text_elegant large circle'><div class="icon_elegant_holder"><span class="fa-stack fa-4x" style="background-color: #f4f4f4;"><i class="fa fa-clock-o fa-stack-1x" style="color: #EC5126;"></i><span class="icon_elegant_arrow" style="border-color: #f4f4f4 transparent transparent transparent;"></span></span></div><div class="icon_text_elegant_holder"><h4 class="icon_elegant_title" style="">Disponibilidade</h4><span class="icon_text_elegant_separator" style=""></span><p style=''>Libera tempo do médico e do administrador,  hoje  gasto  para responder à ligações telefônicas de pacientes e parentes permitindo um acompanhamento  constante do estado do paciente, com o envio de lembretes edicas ou confirmações.</p></div></div><div class="separator  transparent center circle_center " style="margin-top:58px;margin-bottom:0px;"></div>
-
-															</div> 
-														</div> 
-
-														<div class="vc_span3 wpb_column column_container">
-															<div class="wpb_wrapper">
-																<div class='q_icon_with_text_elegant large circle'><div class="icon_elegant_holder"><span class="fa-stack fa-4x" style="background-color: #f4f4f4;"><i class="fa fa-plane fa-stack-1x" style="color: #ec5126;"></i><span class="icon_elegant_arrow" style="border-color: #f4f4f4 transparent transparent transparent;"></span></span></div><div class="icon_text_elegant_holder"><h4 class="icon_elegant_title" style="">Agilidade</h4><span class="icon_text_elegant_separator" style=""></span><p style=''>Agiliza e melhora a saúde dos pacientes ao antecipar problemas ou tendências,  com o acompanhamento por ligações telefônicas convencionais ou consultas físicas.</p></div></div><div class="separator  transparent center circle_center " style="margin-top:58px;margin-bottom:0px;"></div>
-
-															</div> 
-														</div> 
-
-														<div class="vc_span3 wpb_column column_container">
-															<div class="wpb_wrapper">
-																<div class='q_icon_with_text_elegant large circle'><div class="icon_elegant_holder"><span class="fa-stack fa-4x" style="background-color: #f4f4f4;"><i class="fa fa-user fa-stack-1x" style="color: #ec5126;"></i><span class="icon_elegant_arrow" style="border-color: #f4f4f4 transparent transparent transparent;"></span></span></div><div class="icon_text_elegant_holder"><h4 class="icon_elegant_title" style="">Com você</h4><span class="icon_text_elegant_separator" style=""></span><p style=''>Proporciona aos pacientes a sensação de constante atenção que eles requerem nesses casos específicos. É como se o médico estivesse "sempre presente“.</p></div></div><div class="separator  transparent center circle_center " style="margin-top:58px;margin-bottom:0px;"></div>
-
-															</div> 
-														</div> 
-
-														<div class="vc_span3 wpb_column column_container">
-															<div class="wpb_wrapper">
-																<div class='q_icon_with_text_elegant large circle'><div class="icon_elegant_holder"><span class="fa-stack fa-4x" style="background-color: #f4f4f4;"><i class="fa fa-money fa-stack-1x" style="color: #ec5126;"></i><span class="icon_elegant_arrow" style="border-color: #f4f4f4 transparent transparent transparent;"></span></span></div><div class="icon_text_elegant_holder"><h4 class="icon_elegant_title" style="">Maior Retorno</h4><span class="icon_text_elegant_separator" style=""></span><p style=''>Garante que os pacientes retornem  para suas consultas agendadas, e que eles  lembrem-se  da importância de programar as consultas necessárias sem deixar passar muito tempo entre uma e outra.</p></div></div><div class="separator  transparent center circle_center " style="margin-top:58px;margin-bottom:0px;"></div>
-
-															</div> 
-														</div> 
-													</div></div>
-												</div> 
-											</div> 
-										</div>
-									</div>
-
-	<div    class="wpb_row section vc_row-fluid" style=' text-align:left;'><div class=" clearfix">
-<div class="vc_span12 wpb_column column_container">
-	<div class="wpb_wrapper">
-
-		<div class="wpb_text_column wpb_content_element ">
-			<div class="wpb_wrapper">
-
-			</div> 
-		</div> 
-	</div> 
-</div> 
-</div></div><div    class="wpb_row section vc_row-fluid" style=' text-align:left;'><div class=" clearfix">
-<div class="vc_span12 wpb_column column_container">
-	<div class="wpb_wrapper">
-
-		<div class="wpb_text_column wpb_content_element ">
-			<div class="wpb_wrapper">
-
-			</div> 
-		</div> 
-	</div> 
-</div> 
-</div></div>
-
-</div>
+								</div></div>-->
+	</div>
 </div>	
-<div class="container">
-	<div class="container_inner clearfix">
-		<div class="content_bottom" >
-			<div class='qode_call_to_action container in_grid' style=''><div class='container_inner' style=''><section class='grid_section'><div class='call_to_action_text_wrapper'><span style=''>Torne-se um profissional diferenciado agora mesmo.</span> <a href='index.html#' target='_self' class='qbutton small normal_button qbutton_with_icon' style=''><i class='fa fa-usd'></i>Clique aqui para comprar</a></div></section></div></div>		</div>
+		<div class="container" style="background:#f4f4f4">
+			<div class="container_inner clearfix">
+			<div class="contact_form">
+				<h3 style="margin-top:30px; margin-bottom:30px;">Inscreva-se</h3>
+				<form id="contact-form" method="post" action="">
+					<div class="two_columns_50_50 clearfix">
+						<div class="column1">
+							<div class="column_inner">
+								<input type="text" class="requiredField" name="fname" id="fname" value="Nome " placeholder="Nome *" />
+								
+							</div>
+						</div>
+						<div class="column2">
+							<div class="column_inner">
+								<input type="text" class="requiredField email" name="email" id="email" value="" placeholder="Email *" />
+							</div>
+						</div>
+					</div>
+					<div class="two_columns_50_50 clearfix">
+						<div class="column1">
+							<div class="column_inner">
+								<input type="text" class="requiredField" name="lname" id="lname" value="Senha *" placeholder="Senha *" />
+							</div>
+						</div>
+						<div class="column2">
+							<div class="column_inner">
+								<input type="text" name="website" id="website" value="Confirmação de senha *" placeholder="Confirmação de senha *" />	
+							</div>
+						</div>
+					</div>
+				
+					<span class="submit_button_contact">
+						<input class="qbutton small" type="submit" value="Confirmar inscrição" />
+					</span>
+				</form>	
+			</div>
+			</div>
 		</div>
 	</div>
-
-</div>
 </div>
 <footer >
 	<div class="footer_inner clearfix">
-		<div class="footer_top_holder">
+		<!--<div class="footer_top_holder">
 			<div class="footer_top">
 				<div class="container">
 					<div class="container_inner">
@@ -756,7 +1204,7 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</div>-->
 				<div class="footer_bottom_holder">
 					<div class="footer_bottom">
 						<div class="textwidget">
@@ -769,7 +1217,7 @@
 								</div>
 							</div> 
 
-							<p>Um slogan legal aqui</p></div>
+							<p>Comunicação com seus pacientes. Simplificada.</p></div>
 						</div>
 					</div>
 				</div>
